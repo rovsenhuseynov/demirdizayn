@@ -1,0 +1,38 @@
+@import "../assets/variables.scss";
+
+html,
+body {
+  background-color: #f5f5f5;
+  color: $black;
+  font-size: $p-text;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: SamsungSharp;
+  font-weight: 100;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 100%;
+  font-weight: normal;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+//---------------------------------------------------
+
+@media (pointer: coarse) {
+  body {
+    -webkit-touch-callout: none; /* Отключает вызов контекстного меню */
+    -webkit-user-select: none; /* Запрещает выделение текста */
+    user-select: none; /* Для всех браузеров */
+    touch-action: manipulation; /* Отключает ненужные жесты */
+  }
+}

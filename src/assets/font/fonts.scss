@@ -1,0 +1,39 @@
+// Что бы правильно подключить шрифт,следует создать один блок правил для шрифтов (как выше) и указать им путь к файлам шрифта.  А в .scss  компоненте просто прописать название шривта (например -
+
+@font-face {
+  font-family: "Barcode_font";
+  src: url("../font/Barcode_font/BarcodeFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Artful_Beauty";
+  src: url("../font/Artful_Beauty/artful-beauty.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SamsungSharp";
+  src: url("../font/SamsungSharp/samsungsharpsans.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ImpactUnicode";
+  src: url("../font/ImpactUnicode/ImpactUnicode.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "samsungsharpsansS";
+  src: url("../font/SamsungSharp/samsungsharpsans.otf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "samsungsharpsans";
+  src: url("../font/SamsungSharp/samsungsharpsans.otf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "GaboDriveCondensed";
+  src: url("../font/GaboDriveCondensed/GaboDriveCondensed.otf") format("truetype");
+}
