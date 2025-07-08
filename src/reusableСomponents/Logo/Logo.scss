@@ -1,0 +1,45 @@
+@import "../../assets/variables.scss";
+
+.header-nav__logo {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: calc(.4vw + .2rem);
+
+  cursor: pointer;
+  .header-nav__img {
+    height: calc(2vw + 2em);
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgb(139, 139, 139));
+    transition: filter 0.2s ease;
+    &:hover {
+      filter: none;
+    }
+  }
+
+  .header-nav__context {
+    color: #fff;
+    letter-spacing: 0.8px;
+    font-weight: 800;
+    text-shadow: 0 0 5px black;
+    font-family: samsungsharpsans;
+    font-size: $font-size-h5;
+  }
+
+  .header-nav__context {
+  color: #fff;
+  letter-spacing: 0.8px;
+  font-weight: 200;
+  text-shadow: 0 0 5px black;
+  font-family: samsungsharpsans;
+  font-size: $font-size-h5;
+
+  .bold {
+    font-weight: 800;
+    color: $activeStateColor;
+  }
+}
+}
+
+

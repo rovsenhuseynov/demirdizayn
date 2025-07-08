@@ -1,9 +1,8 @@
-import "./Faq.scss"
+import React from "react";
+import "./Faq.scss";
 
 const Faq = () => {
-  return (
-    <div>Faq</div>
-  )
-}
+  return <div className="faq">Faq</div>;
+};
 
-export default Faq
+export default Faq;
