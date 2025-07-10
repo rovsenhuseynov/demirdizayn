@@ -1,11 +1,11 @@
 .header {
- background: url(../../assets/images/logos/website-logo-welding-part.svg);   //???
+  background: url(../../assets/images/backgrounds/stool-wooden-background.jpg);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   width: 100%;
-  aspect-ratio: 2.0571 / 1;
+  // aspect-ratio: 2.0571 / 1;
   position: relative;
   overflow-x: hidden;
 
@@ -15,7 +15,7 @@
 
   @media (width <= 1024px) {
     aspect-ratio: 1 / 1.2;
-    background-position: center right;
+    // background-position: center;
   }
 
   @media (orientation: landscape) {
