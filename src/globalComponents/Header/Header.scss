@@ -1,62 +1,66 @@
+@import "../../assets/variables.scss";
+
 .header {
-  background: url(../../assets/images/backgrounds/stool-wooden-background.jpg);
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/images/backgrounds/1_n.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
   width: 100%;
-  // aspect-ratio: 2.0571 / 1;
-  position: relative;
   overflow-x: hidden;
 
-  @media (max-width: 768px) {
-    aspect-ratio: 2.0571 / 2.6;
+  @media (max-width: 1368px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../assets/images/backgrounds/3_n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
   }
 
-  @media (width <= 1024px) {
-    aspect-ratio: 1 / 1.2;
-    // background-position: center;
-  }
-
-  @media (orientation: landscape) {
-    height: 100vh;
-  }
-
-  .card-wrapper {
-    display: grid;
-    align-content: end;
-    align-items: end;
-    margin-inline: 5vw;
-    width: 95%;
-    height: 100%;
-    // overflow-x: hidden;
-    @media (width <= 1280px) {
-      height: 80%;
-    }
-    @media (width <= 768px) {
-      width: 87%;
-      height: 80%;
-    }
-
-    @media (orientation: landscape) {
-      width: 55%;
-      height: 100%;
-      align-content: center;
-    }
-  }
-
-  .custom-ticker {
+  &__title {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: calc(5vw + 2rem);
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgba(255, 127, 80, 0.5);
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.6);
-    font-family: GaboDriveCondensed;
-    box-shadow: none;
-    background-color: transparent;
-    text-shadow: -3px -3px 5px rgba(0, 0, 0, 0.4);
+    top: 28%;
+    left: 8%;
+    width: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @media (orientation: portrait) and (max-width: 768px) {
+      top: 20%;
+      transform: translateY(-20%);
+    }
+  }
+
+  &__main-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .highlight {
+    color: #ffcc00; // вы сами можете убрать эту строку, если не нужно
+  }
+
+  &__subtitle {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    margin-left: auto;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
   }
 }
