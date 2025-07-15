@@ -23,13 +23,16 @@
     position: absolute;
     top: 28%;
     left: 8%;
-    width: 84%;
+    width: 85%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
 
     @media (max-width: 768px) {
       flex-direction: column;
+      align-items: flex-start;
       gap: 1rem;
     }
 
@@ -40,27 +43,42 @@
   }
 
   &__main-title {
-    color: white;
-    font-size: 3.5rem;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: $font-size-h3;
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+    .no-transform {
+      text-transform: none; // Отключает uppercase для "və"
+      font-size: $font-size-mini;
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
   }
 
-  .highlight {
-    color: #ffcc00; // вы сами можете убрать эту строку, если не нужно
-  }
-
-  &__subtitle {
-    color: #f0f0f0;
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 0;
+  &__subtitle-clip {
+    background-color: $activeStateColor;
+    padding: 0.4rem 1.8rem 0.4rem .6rem;
+    word-spacing: 5px;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+    display: inline-block;
     margin-left: auto;
 
     @media (max-width: 768px) {
+      clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
       margin-left: 0;
-      margin-top: 1rem;
     }
+  }
+
+  &__subtitle {
+    color: white;
+    font-size: $font-size-h6;
+    font-weight: 300;
+    margin: 0;
+    white-space: nowrap;
   }
 }

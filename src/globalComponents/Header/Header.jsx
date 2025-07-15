@@ -1,27 +1,3 @@
-// import "./Header.scss";
-// import HeaderNav from "./HeaderNav/HeaderNav";
-
-// const Header = () => {
-//   return (
-//     <div className="header">
-//       <HeaderNav />
-//       <div className="header__title">
-//         <h1 className="header__main-title">
-//           Loft Mebel və
-//           <br />
-//           <span className="highlight">Metal İşləri</span>
-//         </h1>
-//         <p className="header__subtitle">Качество на высоком уровне</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;
-
-
-
-
 import "./Header.scss";
 import HeaderNav from "./HeaderNav/HeaderNav";
 
@@ -31,11 +7,13 @@ const Header = () => {
       <HeaderNav />
       <div className="header__title">
         <h1 className="header__main-title">
-          Loft Mebel və
+          Loft Mebel <span className="no-transform">&</span>
           <br />
-          Metal İşləri
+          Metal İşlərİ
         </h1>
-        <p className="header__subtitle">Качество на высоком уровне</p>
+        <div className="header__subtitle-clip">
+          <p className="header__subtitle">Yüksək keyfiyyət təminatı</p>
+        </div>
       </div>
     </div>
   );

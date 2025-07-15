@@ -1,12 +1,13 @@
-@import "../../../assets/variables.scss";
+// @import "../../../assets/variables.scss";
+@use "../../../assets/variables" as *;
 
 .header-nav {
   padding-inline: 4vw;
   padding-block: 0.2vh;
   position: fixed;
   width: 100%;
-  background-color: rgba(63, 63, 63, 0.25);
-  backdrop-filter: blur(2px);
+  background-color: rgba(56, 56, 56, 0.5);
+  backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(2px);
   transition: transform 0.25s ease-in-out;
   z-index: 1000;
@@ -104,8 +105,8 @@
         position: fixed;
         left: -52vw;
         width: 52vw;
-        background-color: rgba(0, 0, 0, 0.4);
-        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
         transition: transform 0.3s ease-in-out;
         border-radius: 0 0 15px;
         height: auto;

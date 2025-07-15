@@ -1,21 +1,22 @@
 // Переменные шрифтов   =========
 
+// Шрифт для титульного названия ====
+$font-for-card-title: clamp(3.5vh, 4vh, 3vh);
+
 $font-size-h1: calc(2.2vw + 1.8em);
 $font-size-h2: calc(2vw + 1.6em);
 $font-size-h3: calc(1.8vw + 1.5em);
 $font-size-h4: calc(0.9vw + 1.6em);
 $font-size-h5: calc(0.6vw + 1.3em);
 $font-size-h6: calc(0.3vw + 1em);
-
-// Barcode font size
-$Barcode_font: calc(3vw + 1.5em);
-
-// Шрифт для титульного названия ====
-// $font-for-card-title: clamp(3.5vh, 4vh, 3vh);
+$font-size-mini: calc(0.4vw + 0.8em);
 
 // ====================================
 $p-text: calc(0.6vw + 0.6em);
-$p-fz: calc(0.2vw + 0.6em);  
+$p-fz: calc(0.2vw + 0.6em);
+
+// Barcode font size
+// $Barcode_font: calc(3vw + 1.5em);
 
 // Переменные цветов =========
 

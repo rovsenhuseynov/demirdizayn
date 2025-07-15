@@ -4,7 +4,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   display: none;
   z-index: 1;
@@ -41,7 +41,7 @@
       }
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         color: $activeStateColor;
       }
