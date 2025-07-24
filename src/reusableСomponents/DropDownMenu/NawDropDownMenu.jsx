@@ -31,26 +31,6 @@ const NawDropDownMenu = ({ onClose }) => {
           element-3
         </NavLink>
       </li>
-
-      {/* <li className="dropdown__item">
-        <NavLink
-          to="/blackout"
-          className="dropdown__item-link"
-          onClick={onClose}
-        >
-          element-4
-        </NavLink>
-      </li> */}
-
-      {/* <li className="dropdown__item">
-        <NavLink
-          to="/peculiarities"
-          className="dropdown__item-link"
-          onClick={onClose}
-        >
-          element-5
-        </NavLink>
-      </li> */}
       
     </ul>
   );
