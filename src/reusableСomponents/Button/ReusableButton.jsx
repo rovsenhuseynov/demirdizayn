@@ -1,9 +1,11 @@
-import "./ReusableButton.scss"
+import "./ReusableButton.scss";
 
-const ReusableButton = () => {
+const ReusableButton = ({ children, className = "", ...props }) => {
   return (
-    <div>ReusableButton</div>
-  )
-}
+    <button className={`reusable-button ${className}`} {...props}>
+      {children}
+    </button>
+  );
+};
 
-export default ReusableButton
+export default ReusableButton;

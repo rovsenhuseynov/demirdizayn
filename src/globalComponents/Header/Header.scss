@@ -2,7 +2,14 @@
 
 .header {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 40%,
+      rgba(0, 0, 0, 0.5) 70%,
+      rgba(0, 0, 0, 0.76) 85%,
+      rgba(0, 0, 0, 0.98) 100%
+    ),
     url(../../assets/images/backgrounds/1_n.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -12,7 +19,14 @@
   overflow-x: hidden;
 
   @media (max-width: 1368px) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 40%,
+        rgba(0, 0, 0, 0.3) 70%,
+        rgba(0, 0, 0, 0.56) 85%,
+        rgba(0, 0, 0, 0.98) 100%
+      ),
       url(../../assets/images/backgrounds/3_n.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +47,7 @@
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 2rem;
     }
 
     @media (orientation: portrait) and (max-width: 768px) {
@@ -45,10 +59,10 @@
   &__main-title {
     color: $white;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-size: $font-size-h3;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.4;
     margin: 0;
     text-shadow: 1px 1px 5px rgb(0, 0, 0);
 
@@ -62,7 +76,7 @@
 
   &__subtitle-clip {
     background-color: $activeStateColor;
-    padding: 0.4rem 1.8rem 0.4rem .6rem;
+    padding: 0.4rem 1.8rem 0.4rem 0.6rem;
     word-spacing: 5px;
     clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
     display: inline-block;
@@ -80,5 +94,21 @@
     font-weight: 300;
     margin: 0;
     white-space: nowrap;
+  }
+}
+
+.header__button-wrapper {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .reusable-button {
+    background-color: $activeStateColor;
+    color: #fff;
+    white-space: nowrap;
+    &:hover {
+      background-color: $hoverStateColor;
+    }
   }
 }
