@@ -4,14 +4,14 @@
   position: relative;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.4) 40%,
-      rgba(0, 0, 0, 0.5) 70%,
-      rgba(59, 59, 59, 0.76) 80%,
-      rgba(75, 75, 75, 0.76) 85%,
-      rgba(168, 168, 168, 0.76) 90%,
-      rgba(233, 233, 233, 0.76) 95%,
-      rgba(255, 255, 255, 0.98) 100%
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.7) 30%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.3) 65%,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(255, 255, 255, 0.3) 80%,
+      rgba(255, 255, 255, 0.6) 90%,
+      rgba(255, 255, 255, 1) 100%
     ),
     url(../../assets/images/backgrounds/1_n.jpg);
   background-repeat: no-repeat;
@@ -25,12 +25,10 @@
     background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.4) 40%,
-        rgba(0, 0, 0, 0.5) 70%,
-        rgba(59, 59, 59, 0.76) 80%,
-        rgba(75, 75, 75, 0.76) 85%,
-        rgba(168, 168, 168, 0.76) 90%,
-        rgba(233, 233, 233, 0.76) 95%,
-        rgba(255, 255, 255, 0.98) 100%
+        rgba(255, 255, 255, 0) 70%,
+        rgba(255, 255, 255, 0.3) 80%,
+        rgba(255, 255, 255, 0.6) 90%,
+        rgba(255, 255, 255, 1) 100%
       ),
       url(../../assets/images/backgrounds/3_n.jpg);
     background-repeat: no-repeat;
@@ -45,7 +43,7 @@
     width: 85%;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
 
@@ -73,7 +71,7 @@
 
     .no-transform {
       text-transform: none; // Отключает uppercase для "və"
-      font-size: $font-size-mini;
+      font-size: $font-size-mini-1;
       font-weight: 100;
       letter-spacing: 1px;
     }
@@ -81,7 +79,7 @@
 
   &__subtitle-clip {
     background-color: $activeStateColor;
-    padding: 0.4rem 1.8rem 0.4rem 0.6rem;
+    padding: 0.4rem 3rem 0.4rem 2rem;
     word-spacing: 5px;
     clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
     display: inline-block;
@@ -89,14 +87,14 @@
 
     @media (max-width: 768px) {
       clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
-      margin-left: 0;
+      margin: 0;
     }
   }
 
   &__subtitle {
     color: white;
-    font-size: $font-size-h6;
-    font-weight: 300;
+    font-size: $font-size-mini-2;
+    font-weight: 400;
     margin: 0;
     white-space: nowrap;
   }
@@ -104,6 +102,8 @@
 
 .header__button-wrapper {
   position: absolute;
+  font-size: $font-size-mini-3;
+
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
@@ -112,6 +112,8 @@
     background-color: $activeStateColor;
     color: #fff;
     white-space: nowrap;
+    padding: 0.4rem 3rem 0.4rem 2rem;
+    letter-spacing: .15em;
     &:hover {
       background-color: $hoverStateColor;
     }

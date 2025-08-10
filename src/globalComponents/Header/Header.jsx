@@ -7,7 +7,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/products");
+    navigate("/about");
   };
 
   return (
@@ -25,7 +25,7 @@ const Header = () => {
       </div>
 
       <div className="header__button-wrapper">
-        <ReusableButton onClick={handleNavigate}>Kataloqa keçin</ReusableButton>
+        <ReusableButton onClick={handleNavigate}>Haqqımızda</ReusableButton>
       </div>
     </div>
   );

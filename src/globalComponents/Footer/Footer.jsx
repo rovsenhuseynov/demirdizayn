@@ -20,7 +20,7 @@ const Footer = () => {
           <nav className="footer__nav">
             <ul className="footer__menu">
               <li>
-                <a href="/about">About Us</a>
+                <a href="/about">About</a>
               </li>
               <li>
                 <a href="/products">Catalog</a>

@@ -5,18 +5,19 @@ $font-for-card-title: clamp(3.5vh, 4vh, 3vh);
 
 $font-size-h1: calc(2.2vw + 1.8em);
 $font-size-h2: calc(2vw + 1.6em);
-$font-size-h3: calc(1.8vw + 1.5em);
-$font-size-h4: calc(0.9vw + 1.6em);
-$font-size-h5: calc(0.6vw + 1.3em);
-$font-size-h6: calc(0.3vw + 1em);
-$font-size-mini: calc(0.4vw + 0.8em);
+$font-size-h3: calc(1.8vw + 1.4em);
+$font-size-h4: calc(1.6vw + 1.2em);
+$font-size-h5: calc(1.4vw + 1em);
+$font-size-h6: calc(1.2vw + 0.8em);
+
+$font-size-mini-1: calc(.8vw + 0.9em);
+$font-size-mini-2: calc(0.7vw + 0.8em);
+$font-size-mini-3: calc(0.4vw + 0.7em);
+$font-size-mini-4: calc(0.2vw + 0.7em);
+$font-size-mini-5: calc(0.1vw + 0.7em);
+$font-size-mini-6: calc(0.1vw + 0.5em);
 
 // ====================================
-$p-text: calc(0.6vw + 0.6em);
-$p-fz: calc(0.2vw + 0.6em);
-
-// Barcode font size
-// $Barcode_font: calc(3vw + 1.5em);
 
 // Переменные цветов =========
 
@@ -28,33 +29,4 @@ $lightНellow: rgb(255, 129, 46);
 $white: #fff;
 $black: #000;
 
-// Mixins
-@mixin heading-styles {
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 14px;
-}
 
-@mixin section-title {
-  font-family: Snell_Roundhand;
-  font-weight: 400;
-}
-
-@mixin number-styles {
-  font-family: Snell_Roundhand;
-  font-size: $font-size-h4;
-  font-weight: 400;
-  line-height: 0.7;
-}
-
-@mixin text-styles {
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 16px;
-  font-size: $font-size-h6;
-}
-
-@mixin text-description {
-  font-size: 16px;
-  font-weight: 500;
-}

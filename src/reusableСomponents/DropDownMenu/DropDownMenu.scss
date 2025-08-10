@@ -1,37 +1,120 @@
+// @import "../../assets/variables.scss";
+
+// .dropdown {
+//   list-style-type: none;
+//   background-color: rgba(56, 56, 56, 0.7);
+//   position: absolute;
+//   display: none;
+//   z-index: 1;
+//   border-radius: 5px;
+//   font-size: $font-size-mini-2;
+//   width: auto;
+//   padding-top: 4vw;
+
+//   @media (max-width: 1280px) and (orientation: landscape) {
+//     padding-top: 2em ;
+    
+//   }
+
+//   .dropdown__item {
+//     position: relative;
+//     @media (orientation: landscape) {
+//       padding-block: 2.5vh;
+//     }
+    
+//     @media (max-width: 1280px) {
+//       padding-block: 1em;
+//     }
+    
+//     .dropdown__item-link {
+//       display: block;
+//       padding: .6vh 0.5rem;
+//       margin-inline: 12px;
+//       text-decoration: none;
+//       text-wrap: nowrap;
+//       font-size: $font-size-mini-4;
+//       font-weight: 400;
+//       line-height: 1;
+//       letter-spacing: 1.8px;
+//       color: $white;
+
+//       @media (max-width: 1280px) and (orientation: landscape) {
+//         padding: 0.15rem 0;
+//       }
+
+//       &:hover {
+//         background-color: rgba(0, 0, 0, 0.3);
+//         border-radius: 5px;
+//         color: $activeStateColor;
+//       }
+
+//       &.active {
+//         color: $activeStateColor;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1023px) {
+//   .dropdown {
+//     background-color: rgba(0, 0, 0, 1);
+//     border: 0.5px solid #fff;
+//     font-size: $font-size-mini-5;
+//   }
+// }
+
+// /* Показ меню при наведении */
+// .header__nav-item:hover .dropdown {
+//   display: block;
+// }
+
+// .dropdown__item-link {
+//   text-wrap: nowrap;
+// }
+
+
+
+
 @import "../../assets/variables.scss";
 
 .dropdown {
   list-style-type: none;
-
   background-color: rgba(56, 56, 56, 0.7);
   position: absolute;
-  display: none;
+  display: none; // по умолчанию скрыто
   z-index: 1;
   border-radius: 5px;
-  font-size: $p-text;
+  font-size: $font-size-mini-2;
   width: auto;
+  padding-block: 3vh;
+
+  // Центрирование содержимого по вертикали
+  flex-direction: column;
+  justify-content: center;
 
   @media (max-width: 1280px) and (orientation: landscape) {
-    padding-block: 2em !important;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .dropdown__item {
     position: relative;
+
     @media (orientation: landscape) {
-      padding-block: 1em;
+      padding-block: 2.5vh;
     }
-    
+
     @media (max-width: 1280px) {
       padding-block: 1em;
     }
-    
+
     .dropdown__item-link {
       display: block;
-      padding: 8px 5px;
+      padding: .6vh 0.5rem;
       margin-inline: 12px;
       text-decoration: none;
       text-wrap: nowrap;
-      font-size: $p-fz;
+      font-size: $font-size-mini-4;
       font-weight: 400;
       line-height: 1;
       letter-spacing: 1.8px;
@@ -43,7 +126,7 @@
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.3);
-        border-radius: 0px;
+        border-radius: 5px;
         color: $activeStateColor;
       }
 
@@ -58,14 +141,11 @@
   .dropdown {
     background-color: rgba(0, 0, 0, 1);
     border: 0.5px solid #fff;
+    font-size: $font-size-mini-5;
   }
 }
 
 /* Показ меню при наведении */
 .header__nav-item:hover .dropdown {
-  display: block;
-}
-
-.dropdown__item-link {
-  text-wrap: nowrap;
+  display: flex; // показать и включить flex только при наведении
 }

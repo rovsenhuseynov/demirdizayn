@@ -2,13 +2,12 @@
 
 .reusable-button {
   padding: 0.4rem 1.8rem 0.4rem 0.6rem;
-  word-spacing: 5px;
+  word-spacing: 3px;
   clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
   display: inline-block;
   margin-left: auto;
   cursor: pointer;
   transition: background-color 0.25s;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
+  font-size: calc(0.5vw + 0.9rem);
 }
-
-
