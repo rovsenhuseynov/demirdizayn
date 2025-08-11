@@ -7,24 +7,21 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: calc(4vh + 2rem);
-
+  margin-bottom: calc(3vw + 1rem);
 
   .hero-banner-pretitle {
-    font-family: samsungsharpsans-bold;
-    font-size: $font-size-h3;
-    color: #000000;
-    font-weight: 200;
     text-align: center;
-    line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: 1.6px;
+    margin-bottom: calc(4vh + 2rem);
+    color: $activeStateColor;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    @include section-title-font;
   }
 
   .hero-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
       url("../../../assets/images/banners/hero-banner.webp") center/cover
         no-repeat;
+        
     color: white;
     border-radius: 10px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
@@ -33,16 +30,13 @@
     padding-inline: 1.5vw;
 
     .hero-banner__title {
-      font-family: UniversUnicode_Bold;
+      @include section-title-font;
+      @include fancy-text-shadow-tangerine-7;
       font-size: $font-size-h5;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 6px;
-      line-height: 1.6;
+      letter-spacing: 5px;
       margin-top: calc(2vh + 1rem);
       position: relative;
-      
-      @include fancy-text-shadow-tangerine-7;
+
       @media screen and (orientation: portrait) {
         @include fancy-text-shadow-tangerine-5;
         line-height: 1.5;

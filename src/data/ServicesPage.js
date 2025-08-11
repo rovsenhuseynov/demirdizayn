@@ -7,13 +7,13 @@ const servicesList = [
     title: "Fərdi lofft mebel sifarişi",
     description:
       "Məkanınıza uyğun dizaynda masa, stul, şkaf, rəf və digər mebel növlərinin sifarişi və hazırlanması.",
-    icon: icon1,
+    icon: icon2,
   },
   {
     title: "Loft interyer dizayn və quraşdırma",
     description:
       "Ofis, kafe, restoran və evlər üçün tam lofft stilində interyerin dizaynı və mebelin montajı.",
-    icon: icon2,
+    icon: icon1,
   },
   {
     title: "Metal konstruksiyaların qaynaq işləri",
