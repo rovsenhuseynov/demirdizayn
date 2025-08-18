@@ -10,13 +10,13 @@ const servicesList = [
     icon: icon2,
   },
   {
-    title: "Loft interyer dizayn və quraşdırma",
+    title: "Dizayn və quraşdırma",
     description:
       "Ofis, kafe, restoran və evlər üçün tam lofft stilində interyerin dizaynı və mebelin montajı.",
     icon: icon1,
   },
   {
-    title: "Metal konstruksiyaların qaynaq işləri",
+    title: "Qaynaq işləri",
     description:
       "Peşəkar qaynaqçı komandamız ilə istənilən növdə metal birləşdirmə və karkas yığımı xidmətləri.",
     icon: icon3,

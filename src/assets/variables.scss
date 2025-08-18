@@ -1,21 +1,20 @@
 // Переменные шрифтов   =========
 
 // Шрифт для титульного названия ====
-$font-for-card-title: clamp(3.5vh, 4vh, 3vh);
 
-$font-size-h1: calc(2.2vw + 1.8em);
-$font-size-h2: calc(2vw + 1.6em);
-$font-size-h3: calc(1.8vw + 1.4em);
-$font-size-h4: calc(1.6vw + 1.2em);
-$font-size-h5: calc(1.4vw + 1em);
-$font-size-h6: calc(1.2vw + 0.8em);
+$font-size-h1: calc(2.2vw + 1.8rem);
+$font-size-h2: calc(2vw + 1.6rem);
+$font-size-h3: calc(1.6vw + 1rem);
+$font-size-h4: calc(1.4vw + 1rem);
+$font-size-h5: calc(1.2vw + 1rem);
+$font-size-h6: calc(1vw + 0.8rem);
 
-$font-size-mini-1: calc(.8vw + 0.9em);
-$font-size-mini-2: calc(0.7vw + 0.8em);
-$font-size-mini-3: calc(0.4vw + 0.7em);
-$font-size-mini-4: calc(0.2vw + 0.7em);
-$font-size-mini-5: calc(0.1vw + 0.7em);
-$font-size-mini-6: calc(0.1vw + 0.5em);
+
+$font-size-mini-1: calc(0.5vw + 1rem);
+$font-size-mini-2: calc(0.4vw + 1rem);
+$font-size-mini-3: calc(0.3vw + 1rem);
+$font-size-mini-4: calc(0.2vw + 1rem);
+$font-size-mini-5: calc(0.1vw + 1rem);
 
 // ====================================
 
@@ -28,5 +27,3 @@ $activeStateColor: rgb(255, 102, 0);
 $lightНellow: rgb(255, 129, 46);
 $white: #fff;
 $black: #000;
-
-

@@ -2,7 +2,7 @@ import  "./AboutUs.scss"
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div>Gücümüz — hər detalı incəliklə gözdən keçirməkdir.</div>
   )
 }
 

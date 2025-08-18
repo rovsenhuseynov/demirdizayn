@@ -1,41 +1,141 @@
-.faq-preview {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+// @import "../../../assets/variables.scss";
+// @import "../../../assets/mixin.scss";
 
-  &__title {
-    font-size: 28px;
-    margin-bottom: 24px;
-    text-align: center;
+// .faq-preview {
+//   padding-block: calc(2vh + 2rem);
+//   padding-inline: calc(1vw + 1rem);
+
+//   .faq-preview__title {
+//     @include section-title-style;
+//     @include section-title-font;
+//   }
+
+//   .faq-preview__list {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     max-width: 70%;
+//     margin: 0 auto;
+//     padding: 0;
+
+//     @media (max-width: 768px) {
+//       max-width: 95%;
+//     }
+
+//     .faq-preview__item {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 20px;
+//       padding-block: calc(2vh + 1rem);
+//       padding-inline: calc(2vw + 1rem);
+//       border-radius: 15px;
+//       box-shadow: inset 0 0 0 4px $activeStateColor, 0 0 10px rgba(0, 0, 0, 0.9);
+//       transition: box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+//         transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+//       &:hover {
+//         box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+//           inset 0 0 0 4px $activeStateColor;
+//         transform: scale(1.03);
+//         background-color: rgb(172, 244, 247);
+//       }
+
+//       @media (max-width: 768px) {
+//         padding-inline: calc(1vw + 1rem);
+//       }
+
+//       .faq-preview__item-title,
+//       .faq-preview__item-text {
+//         white-space: normal;
+//         overflow-wrap: break-word;
+//         word-break: break-word;
+//       }
+
+//       .faq-preview__item-title {
+//         font-size: 18px;
+//         font-weight: 600;
+//         color: #1f1f1f;
+//       }
+
+//       .faq-preview__item-text {
+//         color: #252525;
+//         font-size: 15px;
+//         line-height: 1.6;
+//       }
+//     }
+//   }
+
+//   @include button-styles;
+// }
+
+@import "../../../assets/variables.scss";
+@import "../../../assets/mixin.scss";
+
+.faq-preview {
+  padding-block: calc(2vh + 2rem);
+  padding-inline: calc(1vw + 1rem);
+
+  .faq-preview__title {
+    @include section-title-style;
+    @include section-title-font;
   }
 
-  &__list {
+  .faq-preview__list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    max-width: 800px;
+    gap: 20px;
+    max-width: 70%;
     margin: 0 auto;
-  }
+    padding: 0;
 
-  &__item {
-    background: #fff;
-    border-left: 4px solid #888;
-    padding: 16px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-
-    h4 {
-      margin: 0 0 8px;
-      font-size: 18px;
+    @media (max-width: 768px) {
+      max-width: 95%;
     }
 
-    p {
-      margin: 0;
-      color: #555;
-      font-size: 15px;
+    .faq-preview__item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-block: calc(2vh + 1rem);
+      padding-inline: calc(2vw + 1rem);
+      border-radius: 15px;
+      box-shadow: inset 0 0 0 4px $activeStateColor, 0 0 10px rgba(0, 0, 0, 0.9);
+      background-color: #fff; // начальный фон
+      transition: box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1); // плавный переход фона
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+          inset 0 0 0 4px $activeStateColor;
+        transform: scale(1.03);
+        background-color: rgb(255, 246, 240); // фон при hover
+      }
+
+      @media (max-width: 768px) {
+        padding-inline: calc(1vw + 1rem);
+      }
+
+      .faq-preview__item-title,
+      .faq-preview__item-text {
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+
+      .faq-preview__item-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1f1f1f;
+      }
+
+      .faq-preview__item-text {
+        color: #252525;
+        font-size: 15px;
+        line-height: 1.6;
+      }
     }
   }
 
-  &__button-wrapper {
-    margin-top: 32px;
-    text-align: center;
-  }
+  @include button-styles;
 }

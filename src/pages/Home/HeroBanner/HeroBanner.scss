@@ -10,10 +10,7 @@
   margin-bottom: calc(3vw + 1rem);
 
   .hero-banner-pretitle {
-    text-align: center;
-    margin-bottom: calc(4vh + 2rem);
-    color: $activeStateColor;
-    text-shadow: 0 0 3px rgb(0, 0, 0);
+    @include section-title-style;
     @include section-title-font;
   }
 
