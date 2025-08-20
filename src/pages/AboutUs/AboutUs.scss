@@ -1,271 +1,19 @@
-// .about {
-//   padding: 80px 20px;
-//   background: #fff;
-//   color: #333;
-
-//   &__container {
-//     max-width: 1000px;
-//     margin: 0 auto;
-//   }
-
-//   &__title {
-//     font-size: 2.4rem;
-//     font-weight: 700;
-//     text-align: center;
-//     margin-bottom: 10px;
-//   }
-
-//   &__subtitle {
-//     font-size: 1.2rem;
-//     text-align: center;
-//     color: #666;
-//     margin-bottom: 50px;
-//   }
-
-//   &__block {
-//     margin-bottom: 50px;
-
-//     p {
-//       font-size: 1.05rem;
-//       line-height: 1.7;
-//       color: #444;
-//     }
-//   }
-
-//   &__heading {
-//     font-size: 1.5rem;
-//     font-weight: 600;
-//     margin-bottom: 15px;
-//     color: #222;
-//   }
-
-//   &__list {
-//     margin-top: 15px;
-//     padding-left: 20px;
-//     list-style: none;
-
-//     li {
-//       margin-bottom: 8px;
-//       font-size: 1rem;
-//       color: #555;
-//       position: relative;
-//     }
-//   }
-// }
-
-
-
-// .about {
-//   font-family: "Arial", sans-serif;
-//   color: #333;
-
-//   &__hero {
-//     background: url("https://source.unsplash.com/1600x900/?interior,design") center/cover no-repeat;
-//     height: 70vh;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-//   }
-
-//   &__overlay {
-//     background: rgba(0, 0, 0, 0.55);
-//     padding: 40px;
-//     border-radius: 12px;
-//     text-align: center;
-//     color: #fff;
-//     max-width: 800px;
-//   }
-
-//   &__title {
-//     font-size: 3rem;
-//     margin-bottom: 15px;
-//   }
-
-//   &__subtitle {
-//     font-size: 1.3rem;
-//     line-height: 1.6;
-//   }
-
-//   &__company {
-//     display: flex;
-//     align-items: center;
-//     gap: 40px;
-//     padding: 80px 20px;
-//     max-width: 1100px;
-//     margin: 0 auto;
-//     flex-wrap: wrap;
-//   }
-
-//   &__text {
-//     flex: 1;
-//     min-width: 280px;
-
-//     h2 {
-//       font-size: 2rem;
-//       margin-bottom: 20px;
-//     }
-
-//     p {
-//       font-size: 1.1rem;
-//       line-height: 1.7;
-//       color: #444;
-//     }
-//   }
-
-//   &__image {
-//     flex: 1;
-//     min-width: 280px;
-
-//     img {
-//       width: 100%;
-//       border-radius: 12px;
-//       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-//     }
-//   }
-
-//   &__values {
-//     background: #f9f9f9;
-//     padding: 80px 20px;
-//     text-align: center;
-
-//     h2 {
-//       font-size: 2rem;
-//       margin-bottom: 40px;
-//     }
-//   }
-
-//   &__cards {
-//     display: flex;
-//     justify-content: center;
-//     gap: 30px;
-//     flex-wrap: wrap;
-//   }
-
-//   &__card {
-//     background: #fff;
-//     padding: 30px 20px;
-//     border-radius: 16px;
-//     width: 280px;
-//     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-//     transition: transform 0.3s ease;
-
-//     &:hover {
-//       transform: translateY(-5px);
-//     }
-
-//     img {
-//       width: 60px;
-//       margin-bottom: 15px;
-//     }
-
-//     h3 {
-//       font-size: 1.3rem;
-//       margin-bottom: 10px;
-//     }
-
-//     p {
-//       color: #555;
-//       line-height: 1.5;
-//     }
-//   }
-
-//   &__gallery {
-//     padding: 80px 20px;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     text-align: center;
-
-//     h2 {
-//       font-size: 2rem;
-//       margin-bottom: 40px;
-//     }
-//   }
-
-//   &__grid {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-//     gap: 20px;
-
-//     img {
-//       width: 100%;
-//       height: 100%;
-//       object-fit: cover;
-//       border-radius: 12px;
-//       transition: transform 0.3s ease;
-
-//       &:hover {
-//         transform: scale(1.05);
-//       }
-//     }
-//   }
-
-//   &__cta {
-//     background: #222;
-//     color: #fff;
-//     text-align: center;
-//     padding: 80px 20px;
-
-//     h2 {
-//       font-size: 2rem;
-//       margin-bottom: 15px;
-//     }
-
-//     p {
-//       font-size: 1.1rem;
-//       margin-bottom: 25px;
-//       color: #ccc;
-//     }
-//   }
-
-//   &__btn {
-//     background: #fff;
-//     color: #222;
-//     border: none;
-//     padding: 14px 36px;
-//     font-size: 1rem;
-//     font-weight: 600;
-//     border-radius: 10px;
-//     cursor: pointer;
-//     transition: 0.3s;
-
-//     &:hover {
-//       background: #ddd;
-//     }
-//   }
-// }
-
-// /* --- Респонсивность --- */
-// @media (max-width: 768px) {
-//   .about__title {
-//     font-size: 2rem;
-//   }
-
-//   .about__subtitle {
-//     font-size: 1rem;
-//   }
-
-//   .about__company {
-//     flex-direction: column;
-//     text-align: center;
-//   }
-
-//   .about__cards {
-//     flex-direction: column;
-//     align-items: center;
-//   }
-// }
-
-
-
-
+@import "../../assets/variables.scss";
+@import "../../assets/mixin.scss";
 
 .about {
-  font-family: "Arial", sans-serif;
+
   color: #333;
 
+  .about__title {
+    font-size: $font-size-h2;
+    text-align: center;
+    margin-block: calc(2vw + 1rem);
+  }
+
   &__hero {
-    background: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511") center/cover no-repeat;
+    background: url("https://images.unsplash.com/photo-1505691938895-1758d7feb511")
+      center/cover no-repeat;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -280,11 +28,6 @@
     text-align: center;
     color: #fff;
     max-width: 900px;
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
-    }
 
     p {
       font-size: 1.3rem;
@@ -409,7 +152,8 @@
   }
 
   &__cta {
-    background: url("https://images.unsplash.com/photo-1586105251261-72a756497a12") center/cover no-repeat;
+    background: url("https://images.unsplash.com/photo-1586105251261-72a756497a12")
+      center/cover no-repeat;
     padding: 100px 20px;
     text-align: center;
     color: #fff;

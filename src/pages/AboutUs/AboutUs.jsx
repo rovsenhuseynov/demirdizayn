@@ -8,8 +8,6 @@
 
 // export default AboutUs
 
-
-
 // import "./AboutUs.scss";
 
 // const AboutUs = () => {
@@ -60,9 +58,6 @@
 // };
 
 // export default AboutUs;
-
-
-
 
 // import "./AboutUs.scss";
 
@@ -152,10 +147,6 @@
 
 // export default AboutUs;
 
-
-
-
-
 import "./AboutUs.scss";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -168,17 +159,17 @@ const AboutUs = () => {
 
   return (
     <section className="about">
+      <h1 className="about__title" data-aos="fade-up">Haqqımızda</h1>
       {/* Hero */}
       <div className="about__hero">
         <div className="about__overlay">
-          <h1 data-aos="fade-up">О нас</h1>
           <p data-aos="fade-up" data-aos-delay="200">
             Gücümüz — hər detalı incəliklə gözdən keçirməkdir.
           </p>
         </div>
       </div>
 
-      {/* Company */}
+      {/* Company (Şirkət) */}
       <div className="about__company">
         <div className="about__text" data-aos="fade-right">
           <h2>Наша история</h2>
@@ -202,17 +193,26 @@ const AboutUs = () => {
         <h2 data-aos="fade-up">Наши ценности</h2>
         <div className="about__cards">
           <div className="about__card" data-aos="zoom-in" data-aos-delay="100">
-            <img src="https://img.icons8.com/ios-filled/100/4CAF50/quality.png" alt="Качество" />
+            <img
+              src="https://img.icons8.com/ios-filled/100/4CAF50/quality.png"
+              alt="Качество"
+            />
             <h3>Качество</h3>
             <p>Материалы и работа без компромиссов.</p>
           </div>
           <div className="about__card" data-aos="zoom-in" data-aos-delay="200">
-            <img src="https://img.icons8.com/ios-filled/100/2196F3/idea.png" alt="Индивидуальность" />
+            <img
+              src="https://img.icons8.com/ios-filled/100/2196F3/idea.png"
+              alt="Индивидуальность"
+            />
             <h3>Индивидуальность</h3>
             <p>Каждый проект отражает характер заказчика.</p>
           </div>
           <div className="about__card" data-aos="zoom-in" data-aos-delay="300">
-            <img src="https://img.icons8.com/ios-filled/100/FF9800/handshake.png" alt="Честность" />
+            <img
+              src="https://img.icons8.com/ios-filled/100/FF9800/handshake.png"
+              alt="Честность"
+            />
             <h3>Честность</h3>
             <p>Открытость и доверие на каждом этапе.</p>
           </div>
@@ -224,15 +224,24 @@ const AboutUs = () => {
         <h2 data-aos="fade-up">Наши проекты</h2>
         <div className="about__grid">
           <div className="about__item" data-aos="zoom-in">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project1" />
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+              alt="Project1"
+            />
             <div className="about__overlay-text">Современный интерьер</div>
           </div>
           <div className="about__item" data-aos="zoom-in" data-aos-delay="100">
-            <img src="https://images.unsplash.com/photo-1586105251261-72a756497a12" alt="Project2" />
+            <img
+              src="https://images.unsplash.com/photo-1586105251261-72a756497a12"
+              alt="Project2"
+            />
             <div className="about__overlay-text">Скандинавский стиль</div>
           </div>
           <div className="about__item" data-aos="zoom-in" data-aos-delay="200">
-            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2" alt="Project3" />
+            <img
+              src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2"
+              alt="Project3"
+            />
             <div className="about__overlay-text">Уют и дерево</div>
           </div>
         </div>
