@@ -3,410 +3,27 @@
 
 // .about {
 //   .about__title {
-//     font-size: $font-size-h1;
-//     text-align: center;
-//     font-weight: 800;
-//     color: $activeStateColor;
-//     margin-block: calc(3vw + 1rem);
-//     text-shadow: 0 0 9px rgb(110, 110, 110);
-//   }
-
-//   &__hero {
-//     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover
-//       no-repeat;
-//     height: 80vh;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-//   }
-
-//   &__overlay {
-//     background: rgba(0, 0, 0, 0.55);
-//     padding: 50px;
-//     border-radius: 16px;
-//     text-align: center;
-//     color: #fff;
-//     max-width: 900px;
-
-//     p {
-//       font-size: $font-size-mini-2;
-//       line-height: 1.6;
-//     }
-//   }
-
-//   &__company {
-//     display: flex;
-//     align-items: center;
-//     gap: calc(2vw + 20px);
-//     padding: 80px 20px;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     flex-wrap: wrap;
-//     background: linear-gradient(135deg, #f5f7fa 0%, #e4e7eb 100%);
-//     border-radius: 16px;
-//     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-//     position: relative;
-//     overflow: hidden;
-
-//     margin-block: calc(3vw + 1rem);
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       top: -50px;
-//       right: -50px;
-//       width: 200px;
-//       height: 200px;
-//       background: radial-gradient(
-//         circle,
-//         rgba($activeStateColor, 0.2),
-//         transparent
-//       );
-//       z-index: 0;
-//     }
-//   }
-
-//   &__text {
-//     flex: 1 1 280px;
-//     min-width: 240px;
-//     font-size: $font-size-mini-2;
-//     position: relative;
-//     z-index: 1;
-//     padding: 20px;
-
-//     h2 {
-//       font-size: 2.5rem;
-//       font-weight: 700;
-//       color: #2c3e50;
-//       position: relative;
-//       margin-bottom: 20px;
-
-//       &::after {
-//         content: "";
-//         position: absolute;
-//         bottom: -10px;
-//         left: 0;
-//         width: 50px;
-//         height: 4px;
-//         background: $activeStateColor;
-//         border-radius: 2px;
-//       }
-//     }
-
-//     .text-block {
-//       margin-bottom: 20px;
-//     }
-
-//     .text-block__title {
-//       font-size: 1.2rem;
-//       font-weight: 600;
-//       color: $activeStateColor;
-//       margin-bottom: 10px;
-//       display: flex;
-//       align-items: center;
-//       gap: 10px;
-
-//       img {
-//         width: 24px;
-//         height: 24px;
-//       }
-//     }
-
-//     p {
-//       line-height: 1.6;
-//       color: #34495e;
-//       transition: color 0.3s ease;
-//     }
-
-//     p:hover {
-//       color: $activeStateColor;
-//     }
-//   }
-
-//   &__image {
-//     flex: 1 1 280px;
-//     min-width: 240px;
-//     overflow: hidden;
-//     border-radius: 16px;
-//     position: relative;
-//     z-index: 1;
-
-//     img {
-//       width: 100%;
-//       border-radius: 16px;
-//       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-//       display: block;
-//       height: auto;
-//       max-width: 100%;
-//       transition: transform 0.5s ease;
-//     }
-
-//     &:hover img {
-//       transform: scale(1.05);
-//     }
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-//       background: rgba(0, 0, 0, 0.1);
-//       border-radius: 16px;
-//       z-index: 2;
-//       opacity: 0;
-//       transition: opacity 0.3s ease;
-//     }
-
-//     &:hover::before {
-//       opacity: 1;
-//     }
-//   }
-
-//   &__button {
-//     display: inline-block;
-//     margin-top: 20px;
-//     padding: 12px 24px;
-//     background: $activeStateColor;
-//     color: #fff;
-//     text-decoration: none;
-//     border-radius: 8px;
-//     font-weight: 600;
-//     transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-
-//     &:hover {
-//       background: darken($activeStateColor, 10%);
-//       transform: translateY(-2px);
-//       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-//     }
-//   }
-
-//   &__values {
-//     background: #f9f9f9;
-//     padding: 80px 20px;
-//     text-align: center;
-
-//     h2 {
-//       font-size: 2rem;
-//       margin-bottom: 40px;
-//     }
-//   }
-
-//   &__cards {
-//     display: flex;
-//     justify-content: center;
-//     gap: 30px;
-//     flex-wrap: wrap;
-//   }
-
-//   &__card {
-//     background: #fff;
-//     padding: 30px 20px;
-//     border-radius: 16px;
-//     width: 100%;
-//     max-width: 280px;
-//     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-//     transition: transform 0.3s ease;
-
-//     &:hover {
-//       transform: translateY(-8px);
-//     }
-
-//     img {
-//       width: 60px;
-//       margin-bottom: 15px;
-//     }
-//     h3 {
-//       font-size: 1.3rem;
-//       margin-bottom: 10px;
-//     }
-//   }
-
-//   &__gallery {
-//     padding: 80px 20px;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     text-align: center;
-
-//     h2 {
-//       font-size: 2rem;
-//       margin-bottom: 40px;
-//     }
-//   }
-
-//   &__grid {
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-//     gap: 20px;
-//   }
-
-//   &__item {
-//     position: relative;
-//     overflow: hidden;
-//     border-radius: 16px;
-
-//     img {
-//       width: 100%;
-//       height: 100%;
-//       object-fit: cover;
-//       display: block;
-//       transition: transform 0.4s ease;
-//     }
-
-//     @media (min-width: 769px) {
-//       &:hover img {
-//         transform: scale(1.1);
-//       }
-//     }
-
-//     .about__overlay-text {
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-//       right: 0;
-//       padding: 15px;
-//       background: rgba(0, 0, 0, 0.6);
-//       color: #fff;
-//       font-size: 1rem;
-//       opacity: 0;
-//       transform: translateY(100%);
-//       transition: all 0.4s ease;
-//     }
-
-//     &:hover .about__overlay-text {
-//       opacity: 1;
-//       transform: translateY(0);
-//     }
-//   }
-
-//   &__cta {
-//     background: url("https://images.unsplash.com/photo-1586105251261-72a756497a12")
-//       center/cover no-repeat;
-//     padding: 100px 20px;
-//     text-align: center;
-//     color: #fff;
-//     position: relative;
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       inset: 0;
-//       background: rgba(0, 0, 0, 0.55);
-//     }
-
-//     &-inner {
-//       position: relative;
-//       z-index: 1;
-//     }
-
-//     h2 {
-//       font-size: 2.2rem;
-//       margin-bottom: 15px;
-//     }
-//     p {
-//       font-size: 1.1rem;
-//       margin-bottom: 25px;
-//       color: #ddd;
-//     }
-
-//     .about__btn {
-//       background: #fff;
-//       color: #222;
-//       padding: 14px 36px;
-//       border-radius: 10px;
-//       font-weight: 600;
-//       cursor: pointer;
-//       transition: 0.3s;
-
-//       &:hover {
-//         background: #ddd;
-//       }
-//     }
-//   }
-
-//   /* Responsive */
-//   @media (max-width: 768px) {
-//     &__hero {
-//       height: 60vh;
-//     }
-
-//     &__overlay h1 {
-//       font-size: 2rem;
-//     }
-
-//     &__company {
-//       flex-direction: column;
-//       text-align: center;
-//       gap: calc(1vw + 0.2rem);
-//       padding: 40px 15px;
-//     }
-
-//     &__text,
-//     &__image {
-//       flex: 1 1 100%;
-//       min-width: 100%;
-//     }
-
-//     &__text h2 {
-//       font-size: 2rem;
-//     }
-
-//     .text-block__title {
-//       font-size: 1.1 muscoli;
-//       justify-content: center;
-//     }
-
-//     &__cards {
-//       flex-direction: column;
-//       align-items: center;
-//       gap: 20px;
-//     }
-
-//     &__grid {
-//       gap: 15px;
-//     }
-//   }
-
-//   /* Убираем сдвиги AOS на мобильных */
-//   @media (max-width: 768px) {
-//     [data-aos="fade-left"],
-//     [data-aos="fade-right"],
-//     [data-aos="zoom-in"] {
-//       transform: none !important;
-//       opacity: 1 !important;
-//     }
-//   }
-// }
-
-//-----------------------------------------------------------
-
-// @import "../../assets/variables.scss";
-// @import "../../assets/mixin.scss";
-
-// .about {
-//   width: 100%;
-//   overflow-x: hidden;
-//   padding-inline: calc(2vw + 1rem);
-
-//   .about__title {
 //     font-size: $font-size-h2;
 //     text-align: center;
 //     font-weight: 800;
 //     color: #ff6600;
-//     margin-block: calc(3vw + 1rem);
+//     margin-top: calc(2vw + 2rem);
+//     margin-bottom: calc(2vw + 2rem);
 //     text-shadow: 0 0 9px rgb(110, 110, 110);
 //   }
 
 //   .about__hero {
 //     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover
 //       no-repeat;
-//     min-height: 80vh;
+//     min-height: 85vh;
 //     display: flex;
 //     align-items: center;
 //     justify-content: center;
 //     position: relative;
+
+//     @media (max-width: 853px) {
+//       min-height: 60vh;
+//     }
 
 //     .about__overlay {
 //       background: rgba(0, 0, 0, 0.55);
@@ -426,154 +43,21 @@
 //   .about__split {
 //     display: flex;
 //     justify-content: space-between;
-//     align-items: flex-start;
-//     gap: 40px;
+//     align-items: stretch; // теперь оба блока одинаковой высоты
+//     gap: calc(2vw + 1rem);
 //     max-width: 80vw;
 //     margin: calc(4vw + 2rem) auto;
 //     flex-wrap: nowrap;
 
-//     .about__split-left {
-//       flex: 1 1 65%;
-//       min-width: 0;
-
-//       .about__split-title {
-//         font-size: 1.8rem;
-//         font-weight: 700;
-//         margin-bottom: calc(2vw + 0.5rem);
-//         color: #ff6600;
-//       }
-
-//       p {
-//         max-width: 70%;
-//         font-size: 1rem;
-//         line-height: 1.6;
-//         margin-bottom: 10px;
-//       }
-
-//       p:last-of-type {
-//         margin-bottom: calc(2vw + 1rem); /* оставляем только нижнему */
-//       }
-
-//       .about__split-image {
-//         margin-top: 20px;
-
-//         img {
-//           width: 100%;
-//           border-radius: 16px;
-//           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-//           display: block;
-//         }
-//       }
-//     }
-
-//     .about__split-right {
-//       flex: 1 4 auto;
-//       min-width: 0;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;  //----------------------------------
-//       gap: 1vw;
-
-//       .about__card-vertical {
-//         flex: 1 1 0;
-//         display: flex;
-//         gap: 1vw;
-//         background: #111;
-//         padding: 0.5vw;
-//         border-radius: 2vw;
-//         color: #fff;
-//         box-shadow: 0 0 15px rgb(99, 99, 99);
-//         transition: transform 0.3s ease;
-//         align-items: center;
-
-//         &:hover {
-//           transform: translateY(-6px);
-//         }
-
-//         img {
-//           flex: 0 0 40%;
-//           max-height: 100%;
-//           border-radius: 1.5vw;
-//           object-fit: cover;
-//           height: auto;
-//           width: 100px;
-//         }
-
-//         div {
-//           flex: 1 1 60%;
-//           display: flex;
-//           flex-direction: column;
-//           justify-content: center;
-//           margin: calc(1vw + .5rem);
-
-//           h3 {
-//             font-size: $font-size-mini-4;
-//             margin-bottom: 3vh;
-//           }
-
-//           p {
-//             font-size: $font-size-mini-5;
-//             color: #ddd;
-//             line-height: 1.4;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   @media (max-width: 768px) {
-//     .about__split {
-//       flex-direction: column;
-//       gap: 30px;
-//       max-width: 100%;
-
-//       .about__split-left,
-//       .about__split-right {
-//         flex: 1 1 100%;
-//         max-width: 100%;
-//         gap: 30px;
-//       }
-
-//       .about__split-left {
-//         p {
-//           max-width: 95%;
-//         }
-//       }
-
-//       .about__split-right .about__card-vertical {
-//         flex: none;
-//         flex-direction: row;
-
-//         img {
-//           flex: 0 0 40%;
-//           max-height: 80px;
-//         }
-
-//         div {
-//           flex: 1 1 60%;
-//         }
-//       }
-//     }
 //   }
 // }
-
-
-
-
-
-
-
-
-
-
-
 
 // @import "../../assets/variables.scss";
 // @import "../../assets/mixin.scss";
 
 // .about {
 //   width: 100%;
-//   overflow-x: hidden;
+
 //   padding-inline: calc(2vw + 1rem);
 
 //   .about__title {
@@ -581,14 +65,14 @@
 //     text-align: center;
 //     font-weight: 800;
 //     color: #ff6600;
-//     margin-block: calc(3vw + 1rem);
+//     margin-top: calc(2vw + 2rem);
+//     margin-bottom: calc(2vw + 2rem);
 //     text-shadow: 0 0 9px rgb(110, 110, 110);
 //   }
 
 //   .about__hero {
-//     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover
-//       no-repeat;
-//     min-height: 80vh;
+//     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover no-repeat;
+//     min-height: 70vh;
 //     display: flex;
 //     align-items: center;
 //     justify-content: center;
@@ -707,14 +191,15 @@
 //     }
 //   }
 
+//   /* Ландшафтная ориентация до 844px */
 //   @media (max-width: 844px) and (orientation: landscape) {
 //     .about__split-right .about__card-vertical {
 //       max-width: 50%;
-//       margin-inline: auto; // центрируем карточку
+//       margin-inline: auto;
 //     }
 //   }
 
-
+//   /* При ширине до 853px – колоночная раскладка */
 //   @media (max-width: 853px) {
 //     .about__split {
 //       flex-direction: column;
@@ -727,7 +212,6 @@
 //         max-width: 100%;
 //         gap: 30px;
 //       }
-
 
 //       .about__split-left {
 //         p {
@@ -750,23 +234,25 @@
 //       }
 //     }
 //   }
+
+//   /* ДОП. условие: только если ширина 768–853px и уже column */
+//   @media (min-width: 768px) and (max-width: 853px) {
+//     .about__split { flex-direction: column; }
+//     .about__split-right { align-items: center; }
+
+//     .about__split-right .about__card-vertical {
+//       max-width: 60%;
+//       width: 100%;
+//       margin-inline: auto;
+//     }
+//   }
 // }
-
-
-
-
-
-
-
-
-
 
 @import "../../assets/variables.scss";
 @import "../../assets/mixin.scss";
 
 .about {
   width: 100%;
-  overflow-x: hidden;
   padding-inline: calc(2vw + 1rem);
 
   .about__title {
@@ -774,28 +260,34 @@
     text-align: center;
     font-weight: 800;
     color: #ff6600;
-    margin-block: calc(3vw + 1rem);
+    margin-top: calc(2vw + 2rem);
+    margin-bottom: calc(2vw + 2rem);
     text-shadow: 0 0 9px rgb(110, 110, 110);
   }
 
   .about__hero {
-    background: url("../../assets/images/backgrounds/loft_9.webp") center/cover no-repeat;
-    min-height: 80vh;
+    background: url("../../assets/images/backgrounds/loft_9.webp") center/cover
+      no-repeat;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 
+    @media (max-width: 853px) and (orientation: portrait) {
+      min-height: 55vh;
+    }
+
     .about__overlay {
       background: rgba(0, 0, 0, 0.55);
-      padding: 50px;
+      padding: calc(2vw + 1rem);
       border-radius: 16px;
       text-align: center;
       color: #fff;
       max-width: 900px;
 
       p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.6;
       }
     }
@@ -804,10 +296,10 @@
   .about__split {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; // теперь оба блока одинаковой высоты
+    align-items: stretch;
     gap: 40px;
     max-width: 80vw;
-    margin: calc(4vw + 2rem) auto;
+    margin: calc(3vw + 2rem) auto;
     flex-wrap: nowrap;
 
     .about__split-left {
@@ -849,7 +341,7 @@
       min-width: 0;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; // карточки расходятся по верху/середине/низу
+      justify-content: space-between;
       gap: 1vw;
 
       .about__card-vertical {
@@ -899,15 +391,35 @@
     }
   }
 
-  /* Ландшафтная ориентация до 844px */
+  @media (max-width: 882px) and (orientation: landscape) {
+    .about__split-left {
+      p {
+        max-width: 90% !important;
+      }
+    }
+  }
+
+  // Ландшафтная ориентация до 844px
   @media (max-width: 844px) and (orientation: landscape) {
     .about__split-right .about__card-vertical {
       max-width: 50%;
       margin-inline: auto;
     }
+
+    .about__split-left {
+      .about__split-title {
+        text-align: center;
+      }
+
+      img {
+        margin: 0 auto;
+        max-width: 70vw;
+        object-fit: cover;
+      }
+    }
   }
 
-  /* При ширине до 853px – колоночная раскладка */
+  // Колонная раскладка при ширине до 853px
   @media (max-width: 853px) {
     .about__split {
       flex-direction: column;
@@ -933,7 +445,7 @@
 
         img {
           flex: 0 0 40%;
-          max-height: 80px;
+          max-height: 100%;
         }
 
         div {
@@ -943,10 +455,14 @@
     }
   }
 
-  /* ДОП. условие: только если ширина 768–853px и уже column */
+  // Условие для 768–853px
   @media (min-width: 768px) and (max-width: 853px) {
-    .about__split { flex-direction: column; }
-    .about__split-right { align-items: center; }
+    .about__split {
+      flex-direction: column;
+    }
+    .about__split-right {
+      align-items: center;
+    }
 
     .about__split-right .about__card-vertical {
       max-width: 60%;
