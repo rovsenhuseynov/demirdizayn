@@ -10,11 +10,11 @@ const aboutData = {
     overlayText: "Gücümüz — hər detalı incəliklə gözdən keçirməkdir.",
   },
 
-  mission: {
-    title: "Bizim Missiyamız",
+  ourWork: {
+    title: "Bizim Fəaliyyətimiz",
     text: [
       "Biz kiçik bir emalatxana kimi fəaliyyətə başladıq, hər bir sifarişə fərdi yanaşma və detallara diqqət bizim əsas prinsiplərimiz oldu.",
-      "Yaradıcı yanaşma və dəqiqliklə, hər bir layihəni özünəməxsus və dəyərli edirik.",
+      "Bu gün biz Industrial dizaynın gözəlliyi və metal möhkəmliyi ahəngi ilə loft mebel elementlərini hazırlayırıq — qaynaq və yaradıcı baxışla sifarişlərinizi gerçəkləşdiririk. ", "Həmçinin müxtəlif çətinlik dərəcəsində qaynaq işləri də təklif edirik."
     ],
     image: ImageAboutUs_1,
   },

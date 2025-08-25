@@ -47,13 +47,13 @@
 //       <div className="about__split">
 //         {/* section Left side */}
 //         <section className="about__split-left" data-aos={fadeRight}>
-//           <h2 className="about__split-title">{aboutData.mission.title}</h2>
-//           {aboutData.mission.text.map((paragraph, i) => (
+//           <h2 className="about__split-title">{aboutData.ourWork.title}</h2>
+//           {aboutData.ourWork.text.map((paragraph, i) => (
 //             <p key={i}>{paragraph}</p>
 //           ))}
 
 //           <div className="about__split-image">
-//             <img src={aboutData.mission.image} alt="Missiya" />
+//             <img src={aboutData.ourWork.image} alt="Missiya" />
 //           </div>
 //         </section>
 
@@ -134,13 +134,13 @@ const AboutUs = () => {
       <div className="about__split">
         {/* section Left side */}
         <section className="about__split-left" data-aos={fadeRight}>
-          <h2 className="about__split-title">{aboutData.mission.title}</h2>
-          {aboutData.mission.text.map((paragraph, i) => (
+          <h2 className="about__split-title">{aboutData.ourWork.title}</h2>
+          {aboutData.ourWork.text.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
 
           <div className="about__split-image">
-            <img src={aboutData.mission.image} alt="Missiya" />
+            <img src={aboutData.ourWork.image} alt="Missiya" />
           </div>
         </section>
 

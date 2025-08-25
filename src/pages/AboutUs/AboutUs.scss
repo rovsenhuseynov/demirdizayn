@@ -92,7 +92,8 @@
         max-width: 70%;
         font-size: 1rem;
         line-height: 1.6;
-        margin-bottom: 10px;
+        margin-bottom: 1em;
+        text-indent: 1.5em; /* отступ первой буквы/первой строки */
       }
 
       p:last-of-type {
@@ -127,12 +128,12 @@
         padding: 0.5vw;
         border-radius: 2vw;
         color: #fff;
-        box-shadow: 0 0 15px rgb(99, 99, 99);
-        transition: transform 0.3s ease;
+        box-shadow: 0 0 15px rgb(77, 77, 77);
+        transition: box-shadow 0.2s ease;
         align-items: center;
 
         &:hover {
-          transform: translateY(-6px);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0);
         }
 
         img {
