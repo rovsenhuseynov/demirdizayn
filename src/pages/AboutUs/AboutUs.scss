@@ -268,15 +268,11 @@
   .about__hero {
     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover
       no-repeat;
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-
-    @media (max-width: 853px) and (orientation: portrait) {
-      min-height: 55vh;
-    }
 
     .about__overlay {
       background: rgba(0, 0, 0, 0.55);
@@ -291,7 +287,38 @@
         line-height: 1.6;
       }
     }
+  }       // iPad Air не работает на iPad Pro и других некоторых
+
+  // @media (max-width: 853px) and (orientation: portrait) {   
+  //   .about__hero {
+  //     min-height: 70vh;
+  //   }
+  // }
+  // @media (max-width: 1180px) and (orientation: landscape) {
+  //   .about__hero {
+  //     min-height: 70vh;
+  //   }
+  // }
+
+  @media (max-width: 1180px) and (orientation: portrait) {
+  .about__hero {
+    min-height: 70vh;
   }
+}
+
+/* Для планшетов в ландшафте */
+@media (max-width: 1366px) and (orientation: landscape) {
+  .about__hero {
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+  .about__hero {
+    min-height: 90vh;
+  }
+}
+
 
   .about__split {
     display: flex;
