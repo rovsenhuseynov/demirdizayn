@@ -1,253 +1,3 @@
-// @import "../../assets/variables.scss";
-// @import "../../assets/mixin.scss";
-
-// .about {
-//   .about__title {
-//     font-size: $font-size-h2;
-//     text-align: center;
-//     font-weight: 800;
-//     color: #ff6600;
-//     margin-top: calc(2vw + 2rem);
-//     margin-bottom: calc(2vw + 2rem);
-//     text-shadow: 0 0 9px rgb(110, 110, 110);
-//   }
-
-//   .about__hero {
-//     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover
-//       no-repeat;
-//     min-height: 85vh;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-
-//     @media (max-width: 853px) {
-//       min-height: 60vh;
-//     }
-
-//     .about__overlay {
-//       background: rgba(0, 0, 0, 0.55);
-//       padding: 50px;
-//       border-radius: 16px;
-//       text-align: center;
-//       color: #fff;
-//       max-width: 900px;
-
-//       p {
-//         font-size: 1rem;
-//         line-height: 1.6;
-//       }
-//     }
-//   }
-
-//   .about__split {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: stretch; // теперь оба блока одинаковой высоты
-//     gap: calc(2vw + 1rem);
-//     max-width: 80vw;
-//     margin: calc(4vw + 2rem) auto;
-//     flex-wrap: nowrap;
-
-//   }
-// }
-
-// @import "../../assets/variables.scss";
-// @import "../../assets/mixin.scss";
-
-// .about {
-//   width: 100%;
-
-//   padding-inline: calc(2vw + 1rem);
-
-//   .about__title {
-//     font-size: $font-size-h2;
-//     text-align: center;
-//     font-weight: 800;
-//     color: #ff6600;
-//     margin-top: calc(2vw + 2rem);
-//     margin-bottom: calc(2vw + 2rem);
-//     text-shadow: 0 0 9px rgb(110, 110, 110);
-//   }
-
-//   .about__hero {
-//     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover no-repeat;
-//     min-height: 70vh;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-
-//     .about__overlay {
-//       background: rgba(0, 0, 0, 0.55);
-//       padding: 50px;
-//       border-radius: 16px;
-//       text-align: center;
-//       color: #fff;
-//       max-width: 900px;
-
-//       p {
-//         font-size: 1rem;
-//         line-height: 1.6;
-//       }
-//     }
-//   }
-
-//   .about__split {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: stretch; // теперь оба блока одинаковой высоты
-//     gap: 40px;
-//     max-width: 80vw;
-//     margin: calc(4vw + 2rem) auto;
-//     flex-wrap: nowrap;
-
-//     .about__split-left {
-//       flex: 1 1 65%;
-//       min-width: 0;
-
-//       .about__split-title {
-//         font-size: 1.8rem;
-//         font-weight: 700;
-//         margin-bottom: calc(2vw + 0.5rem);
-//         color: #ff6600;
-//       }
-
-//       p {
-//         max-width: 70%;
-//         font-size: 1rem;
-//         line-height: 1.6;
-//         margin-bottom: 10px;
-//       }
-
-//       p:last-of-type {
-//         margin-bottom: calc(2vw + 1rem);
-//       }
-
-//       .about__split-image {
-//         margin-top: 20px;
-
-//         img {
-//           width: 100%;
-//           border-radius: 16px;
-//           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-//           display: block;
-//         }
-//       }
-//     }
-
-//     .about__split-right {
-//       flex: 1 4 auto;
-//       min-width: 0;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between; // карточки расходятся по верху/середине/низу
-//       gap: 1vw;
-
-//       .about__card-vertical {
-//         flex: 0 0 auto;
-//         display: flex;
-//         gap: 1vw;
-//         background: #111;
-//         padding: 0.5vw;
-//         border-radius: 2vw;
-//         color: #fff;
-//         box-shadow: 0 0 15px rgb(99, 99, 99);
-//         transition: transform 0.3s ease;
-//         align-items: center;
-
-//         &:hover {
-//           transform: translateY(-6px);
-//         }
-
-//         img {
-//           flex: 0 0 40%;
-//           max-height: 100%;
-//           border-radius: 1.5vw;
-//           object-fit: cover;
-//           height: auto;
-//           min-width: 100px;
-//         }
-
-//         div {
-//           flex: 1 1 60%;
-//           display: flex;
-//           flex-direction: column;
-//           justify-content: center;
-//           margin: calc(1vw + 0.5rem);
-
-//           h3 {
-//             font-size: $font-size-mini-4;
-//             margin-bottom: 3vh;
-//           }
-
-//           p {
-//             font-size: $font-size-mini-5;
-//             color: #ddd;
-//             line-height: 1.4;
-//           }
-//         }
-//       }
-//     }
-//   }
-
-//   /* Ландшафтная ориентация до 844px */
-//   @media (max-width: 844px) and (orientation: landscape) {
-//     .about__split-right .about__card-vertical {
-//       max-width: 50%;
-//       margin-inline: auto;
-//     }
-//   }
-
-//   /* При ширине до 853px – колоночная раскладка */
-//   @media (max-width: 853px) {
-//     .about__split {
-//       flex-direction: column;
-//       gap: 30px;
-//       max-width: 100%;
-
-//       .about__split-left,
-//       .about__split-right {
-//         flex: 1 1 100%;
-//         max-width: 100%;
-//         gap: 30px;
-//       }
-
-//       .about__split-left {
-//         p {
-//           max-width: 95%;
-//         }
-//       }
-
-//       .about__split-right .about__card-vertical {
-//         flex: none;
-//         flex-direction: row;
-
-//         img {
-//           flex: 0 0 40%;
-//           max-height: 80px;
-//         }
-
-//         div {
-//           flex: 1 1 60%;
-//         }
-//       }
-//     }
-//   }
-
-//   /* ДОП. условие: только если ширина 768–853px и уже column */
-//   @media (min-width: 768px) and (max-width: 853px) {
-//     .about__split { flex-direction: column; }
-//     .about__split-right { align-items: center; }
-
-//     .about__split-right .about__card-vertical {
-//       max-width: 60%;
-//       width: 100%;
-//       margin-inline: auto;
-//     }
-//   }
-// }
-
 @import "../../assets/variables.scss";
 @import "../../assets/mixin.scss";
 
@@ -287,38 +37,36 @@
         line-height: 1.6;
       }
     }
-  }       // iPad Air не работает на iPad Pro и других некоторых
-
-  // @media (max-width: 853px) and (orientation: portrait) {   
-  //   .about__hero {
-  //     min-height: 70vh;
-  //   }
-  // }
-  // @media (max-width: 1180px) and (orientation: landscape) {
-  //   .about__hero {
-  //     min-height: 70vh;
-  //   }
-  // }
+  }
 
   @media (max-width: 1180px) and (orientation: portrait) {
-  .about__hero {
-    min-height: 70vh;
+    .about__hero {
+      min-height: 50vh;
+    }
   }
-}
-
-/* Для планшетов в ландшафте */
-@media (max-width: 1366px) and (orientation: landscape) {
-  .about__hero {
-    min-height: 70vh;
+  @media (max-width: 912px) and (orientation: portrait) {
+    .about__hero {
+      min-height: 60vh;
+    }
   }
-}
-
-@media (max-width: 932px) and (orientation: landscape) {
-  .about__hero {
-    min-height: 90vh;
+  @media (max-width: 430px) and (orientation: portrait) {
+    .about__hero {
+      min-height: 65vh;
+    }
   }
-}
 
+  /* Для планшетов в ландшафте */
+  @media (max-width: 1366px) and (orientation: landscape) {
+    .about__hero {
+      min-height: 70vh;
+    }
+  }
+
+  @media (max-width: 932px) and (orientation: landscape) {
+    .about__hero {
+      min-height: 90vh;
+    }
+  }
 
   .about__split {
     display: flex;
