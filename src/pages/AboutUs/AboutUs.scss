@@ -246,4 +246,131 @@
       margin-inline: auto;
     }
   }
+
+  .about__gallery {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f7f7f7;
+
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .about__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr); // tablet – 3 колонки
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr); // смартфон – 2 колонки
+      }
+
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr; // очень маленькие экраны – 1 колонка
+      }
+    }
+
+    .about__item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+      /* фиксируем пропорции карточки */
+      aspect-ratio: 4 / 3;
+
+      .about__image-wrapper {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* картинка всегда заполняет блок */
+          transition: transform 0.5s ease;
+        }
+      }
+
+      &:hover img {
+        transform: scale(1.07);
+      }
+
+      .about__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+        color: #fff;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.4s ease;
+        font-size: 1.1rem;
+        padding: 1rem;
+
+        .about__icon {
+          font-size: 1.5rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      &:hover .about__overlay {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.about__lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  .about__lightbox-content {
+    position: relative;
+    max-height: 70vh; // адаптивная высота
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-height: 70vh;
+      max-width: 90vw;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #fff;
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+
+    .about__lightbox-close {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
 }
