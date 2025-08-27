@@ -19,11 +19,13 @@ const HeroBanner = () => {
           <br />
           modern üslub
         </h1>
+
         <div className="hero-banner__button-wrapper">
           <ReusableButton onClick={handleNavigate}>
             Kataloqa keçin
           </ReusableButton>
         </div>
+        
       </div>
     </div>
   );
