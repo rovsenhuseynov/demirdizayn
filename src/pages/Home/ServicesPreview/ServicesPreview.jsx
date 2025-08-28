@@ -26,11 +26,13 @@ const ServicesPreview = () => {
           </div>
         ))}
       </div>
+
       <div className="services-preview__button-wrapper">
         <ReusableButton onClick={handleNavigate}>
           Bütün xidmətlər
         </ReusableButton>
       </div>
+      
     </section>
   );
 };
