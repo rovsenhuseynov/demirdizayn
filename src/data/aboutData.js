@@ -13,7 +13,21 @@ import galleryImg3_big from "../assets/images/content_images/Loft_Table-Chairs_b
 import galleryImg4 from "../assets/images/content_images/Mangal.webp";
 import galleryImg4_big from "../assets/images/content_images/Mangal_big.webp";
 
+// ------------------ новые изображения слайдера сверху ------------------
+import slider1 from "../assets/images/backgrounds/stool-wooden-background.jpg";
+import slider1_Portrait from "../assets/images/backgrounds/stool-wooden-background-portrait.jpg";
+import slider2 from "../assets/images/backgrounds/3_n.jpg";
+import slider2_Portrait from "../assets/images/backgrounds/3_n-portrait.jpg";
+import slider3 from "../assets/images/backgrounds/58375_big.jpg"; // портретной версии нет
+
 const aboutData = {
+  // ------------------ новые слайдерные изображения ------------------
+  sliderImages: [
+    { image: slider1, imagePortrait: slider1_Portrait },
+    { image: slider2, imagePortrait: slider2_Portrait },
+    { image: slider3 },
+  ],
+
   hero: {
     title: "Haqqımızda",
     overlayText: "Gücümüz — hər detalı incəliklə gözdən keçirməkdir.",
