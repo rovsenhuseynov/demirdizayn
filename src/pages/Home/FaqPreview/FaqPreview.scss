@@ -15,7 +15,7 @@
     flex-direction: column;
     gap: 20px;
     max-width: 70%;
-    margin: 0 auto;
+    margin: calc(2vw + 1rem) auto;
     padding: 0;
 
     @media (max-width: 768px) {

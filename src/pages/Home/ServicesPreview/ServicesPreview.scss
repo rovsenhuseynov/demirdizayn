@@ -47,7 +47,7 @@
     justify-content: center;
     gap: 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: calc(2vw + 1rem) auto;
   }
 
   &__item {
@@ -55,7 +55,7 @@
     max-width: 320px;
     aspect-ratio: 1 / 1;
     background: #f5f5f5;
-    padding: 20px 20px 40px;
+    padding: calc(2vw + 1rem);
     border: 0.3rem solid v.$activeStateColor;
     box-shadow: 0 9px 30px rgba(0, 0, 0, 0.6);
     text-align: center;
