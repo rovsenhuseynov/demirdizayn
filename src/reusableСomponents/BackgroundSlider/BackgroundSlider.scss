@@ -1,36 +1,6 @@
-// .bg-slider {
-//   position: relative;
-//   width: 100%;
-//   overflow: hidden;
-
-//   .bg-slide {
-//     position: absolute;
-//     inset: 0;
-//     background-size: cover;
-//     background-position: center;
-//     opacity: 0;
-//   }
-
-//   .bg-slide.active {
-//     opacity: 1;
-//   }
-
-//   &__overlay {
-//     position: relative;
-//     z-index: 2;
-//     color: #fff;
-//     text-align: center;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-//   }
-// }
-
-
-
 .bg-slider {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   .bg-slide {
     position: absolute;

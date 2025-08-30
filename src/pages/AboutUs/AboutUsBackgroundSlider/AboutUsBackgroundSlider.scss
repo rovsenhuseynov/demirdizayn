@@ -1,74 +1,83 @@
-// .aboutus-slider {
-//   // можно переопределять базовый slider под конкретный блок
-//   height: 75vh; // например, чуть выше чем дефолтный
-//   border-radius: 12px;
-//   overflow: hidden;
+@use "../../../assets/mixin.scss" as m;
+@use "../../../assets/variables.scss" as v;
 
-//   &__overlay {
-//     position: relative;
-//     z-index: 2;
-//     text-align: center;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     color: #fff;
-//     padding: 1rem;
-//   }
+.aboutus-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem; // расстояние между текстом и слайдером
+  margin-bottom: calc(2vw + 1rem); // отступ снизу для секции
+  .aboutus-slider {
+    border-radius: 12px;
+    overflow: hidden;
 
-//   &__title {
-//     font-size: 2.5rem;
-//     font-weight: bold;
-//     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.7);
-//     margin-bottom: 1rem;
-//   }
-
-//   &__text {
-//     font-size: 1.25rem;
-//     max-width: 700px;
-//     margin: 0 auto;
-//     line-height: 1.6;
-//     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-//   }
-// }
-
-
-
-
-
-.aboutus-slider {
-  border-radius: 12px;
-  overflow: hidden;
-
-  &__overlay {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    padding: 1rem;
-  }
-
-  &__title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.7);
-    margin-bottom: 1rem;
-  }
-
-  &__text {
-    font-size: 1.25rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-  }
-
-  @media (max-width: 768px) {
-    &__title {
-      font-size: 1.8rem;
+    &__overlay {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(
+        -50%,
+        50%
+      ); // кнопка по центру и по горизонтали и вертикали
     }
-    &__text {
-      font-size: 1rem;
+  }
+
+  .cta-clean {
+    width: 100%;
+    padding: 2rem 2rem;
+    text-align: center;
+    background: transparent;
+    border-radius: 20px;
+    color: #1a1a1a;
+
+    &__inner {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h3 {
+        font-size: v.$font-size-mini-3;
+        font-weight: 700;
+        line-height: 1.6;
+        margin-bottom: 1.2rem;
+        color: #333;
+      }
+
+      p {
+        font-size: v.$font-size-mini-1;
+        margin-bottom: 0;
+        color: #555;
+        line-height: 1.5;
+      }
+    }
+
+    &__btn {
+      @include m.button-styles;
+    }
+  }
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .cta-clean {
+    padding: 3rem 1rem;
+
+    &__inner {
+      h3 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .aboutus-slider {
+    &__overlay {
+      .cta-clean__btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+      }
     }
   }
 }

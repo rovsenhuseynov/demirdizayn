@@ -408,7 +408,8 @@
 
 
 @mixin button-styles {
-  margin-top: calc(4vh + 2rem);
+  margin-top: 1rerm;
+  margin-bottom: calc(4vh + 2rem);
   text-align: center;
   font-size: v.$font-size-mini-3;
 

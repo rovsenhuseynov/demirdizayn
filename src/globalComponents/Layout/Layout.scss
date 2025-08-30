@@ -1,10 +1,27 @@
 .layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main {
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  /* базовый фолбэк */
+  min-height: 100dvh;
+
+  /* динамический viewport (работает в iPadOS 16+, Windows, Android) */
+  @supports (height: 100dvh) {
+    min-height: 100dvh;
   }
 
+  /* "малый" viewport (учитывает адресную строку) */
+  @supports (height: 100svh) {
+    min-height: 100svh;
+  }
+
+  /* старые Safari/iPad (портрет) */
+  @supports (-webkit-touch-callout: none) {
+    min-height: -webkit-fill-available;
+  }
+}
+
+.layout__main {
+  flex: 1 1 auto;
+  min-height: 0;
+}

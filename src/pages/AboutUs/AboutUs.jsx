@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import { useEffect, useState, useMemo } from "react";
 import aboutData from "../../data/aboutData";
 import AboutGallery from "./AboutGallery/AboutGallery";
-import CtaSection from "../../reusableСomponents/CtaSection/CtaSection";
 import AboutUsBackgroundSlider from "./AboutUsBackgroundSlider/AboutUsBackgroundSlider";
 
 const AboutUs = () => {
@@ -78,8 +77,7 @@ const AboutUs = () => {
       {/* передаём именно массив */}
       <AboutGallery items={aboutData.galleryItems} />
 
-      <CtaSection />
-
+      {/* <CtaSection /> */}
       <AboutUsBackgroundSlider />
     </section>
   );

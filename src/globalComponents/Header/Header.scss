@@ -1,4 +1,4 @@
-@import "../../assets/variables.scss";
+@use "../../assets/variables.scss" as v;
 
 .header {
   position: relative;
@@ -19,7 +19,7 @@
   background-size: cover;
   height: 100vh;
   width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   @media (max-width: 1368px) {
     background: linear-gradient(
@@ -60,10 +60,10 @@
   }
 
   &__main-title {
-    color: $white;
+    color: v.$white;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: $font-size-h3;
+    font-size: v.$font-size-h3;
     font-weight: 700;
     line-height: 1.4;
     margin: 0;
@@ -71,14 +71,14 @@
 
     .no-transform {
       text-transform: none; // Отключает uppercase для "və"
-      font-size: $font-size-mini-1;
+      font-size: v.$font-size-mini-1;
       font-weight: 100;
       letter-spacing: 1px;
     }
   }
 
   &__subtitle-clip {
-    background-color: $activeStateColor;
+    background-color: v.$activeStateColor;
     padding: 0.4rem 3rem 0.4rem 2rem;
     word-spacing: 5px;
     clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
@@ -93,7 +93,7 @@
 
   &__subtitle {
     color: white;
-    font-size: $font-size-mini-2;
+    font-size: v.$font-size-mini-2;
     font-weight: 400;
     margin: 0;
     white-space: nowrap;
@@ -102,20 +102,20 @@
 
 .header__button-wrapper {
   position: absolute;
-  font-size: $font-size-mini-3;
+  font-size: v.$font-size-mini-3;
 
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
 
   .reusable-button {
-    background-color: $activeStateColor;
+    background-color: v.$activeStateColor;
     color: #fff;
     white-space: nowrap;
     padding: 0.4rem 3rem 0.4rem 2rem;
     letter-spacing: .15em;
     &:hover {
-      background-color: $hoverStateColor;
+      background-color: v.$hoverStateColor;
     }
   }
 }

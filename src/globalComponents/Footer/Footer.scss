@@ -1,8 +1,12 @@
-@import "../../assets/variables.scss";
+@use "../../assets/variables.scss" as v;
 
 .footer {
-  background-color: #000;
-  color: #fff;
+  background-color: v.$black;
+  color: v.$white;
+  min-height: auto; 
+  height: auto; 
+  flex-shrink: 0;
+
 
   .footer__container {
     margin: 0 auto;
@@ -40,7 +44,7 @@
     a {
       color: white;
       text-decoration: none;
-      font-size: $font-size-mini-1;
+      font-size: v.$font-size-mini-1;
 
       &:hover {
         color: #ff6600;
@@ -82,11 +86,11 @@
     border-top: 1px solid #444;
     padding: 0.5rem 1.5rem;
     text-align: center;
-    font-size:$font-size-mini-2;
+    font-size: v.$font-size-mini-2;
     color: #aaa;
 
     @media (min-width: 800px) {
-      font-size:$font-size-mini-2;
+      font-size: v.$font-size-mini-2;
     }
   }
 }

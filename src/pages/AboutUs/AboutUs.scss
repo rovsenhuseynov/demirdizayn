@@ -19,7 +19,7 @@
   .about__hero {
     background: url("../../assets/images/backgrounds/loft_9.webp") center/cover
       no-repeat;
-    min-height: 80vh;
+    min-height: 80dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,30 +43,30 @@
 
   @media (max-width: 1180px) and (orientation: portrait) {
     .about__hero {
-      min-height: 50vh;
+      min-height: 50dvh;
     }
   }
   @media (max-width: 912px) and (orientation: portrait) {
     .about__hero {
-      min-height: 60vh;
+      min-height: 60dvh;
     }
   }
   @media (max-width: 430px) and (orientation: portrait) {
     .about__hero {
-      min-height: 65vh;
+      min-height: 65dvh;
     }
   }
 
   /* Для планшетов в ландшафте */
   @media (max-width: 1366px) and (orientation: landscape) {
     .about__hero {
-      min-height: 70vh;
+      min-height: 70dvh;
     }
   }
 
   @media (max-width: 932px) and (orientation: landscape) {
     .about__hero {
-      min-height: 90vh;
+      min-height: 90dvh;
     }
   }
 
@@ -172,7 +172,7 @@
 
           h3 {
             font-size: $font-size-mini-4;
-            margin-bottom: 3vh;
+            margin-bottom: 3dvh;
           }
 
           p {
