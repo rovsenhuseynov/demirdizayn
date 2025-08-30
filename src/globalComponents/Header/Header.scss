@@ -11,15 +11,15 @@
       rgba(255, 255, 255, 0) 70%,
       rgba(255, 255, 255, 0.3) 80%,
       rgba(255, 255, 255, 0.6) 90%,
-      rgba(255, 255, 255, 1) 100%
+      rgba(245, 245, 245, 1) 100%
     ),
-    url(../../assets/images/backgrounds/1_n.jpg);
+    url(../../assets/images/backgrounds/Loft-chair-and-table.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
   width: 100%;
-  // overflow-x: hidden;
+  background-color: v.$background-color;
 
   @media (max-width: 1368px) {
     background: linear-gradient(
@@ -28,12 +28,13 @@
         rgba(255, 255, 255, 0) 70%,
         rgba(255, 255, 255, 0.3) 80%,
         rgba(255, 255, 255, 0.6) 90%,
-        rgba(255, 255, 255, 1) 100%
+        rgba(245, 245, 245, 1) 100%
       ),
-      url(../../assets/images/backgrounds/3_n.jpg);
+      url(../../assets/images/backgrounds/Loft-chair-and-table-mini.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    background-color: v.$background-color;
   }
 
   &__title {
@@ -113,7 +114,7 @@
     color: #fff;
     white-space: nowrap;
     padding: 0.4rem 3rem 0.4rem 2rem;
-    letter-spacing: .15em;
+    letter-spacing: 0.15em;
     &:hover {
       background-color: v.$hoverStateColor;
     }

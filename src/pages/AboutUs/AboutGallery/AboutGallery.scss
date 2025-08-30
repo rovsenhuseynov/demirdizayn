@@ -9,6 +9,7 @@
   position: relative;
   display: grid;
   gap: calc(2rem + 1vw);
+  background-color: $background-color;
 
   .about__gallery-title {
     line-height: 1;
