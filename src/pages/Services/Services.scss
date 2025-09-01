@@ -1067,7 +1067,7 @@
   background-color: transparent;
   animation: blink 1.5s infinite alternate;
   pointer-events: none;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  // box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
   opacity: 1;
   transition: opacity 0.3s ease;
 }
