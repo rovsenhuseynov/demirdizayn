@@ -462,6 +462,397 @@
 // }
 
 /* Services.scss */
+
+// :root {
+//   --cover-timing: 0.5s;
+//   --cover-ease: cubic-bezier(0.66, 0.08, 0.19, 0.97);
+//   --cover-stagger: 0.15s;
+
+//   --text-timing: 0.75s;
+//   --text-stagger: 0.015s;
+//   --text-ease: cubic-bezier(0.38, 0.26, 0.05, 1.07);
+
+//   --title-stagger: 0.05s;
+//   --highlight: white;
+// }
+
+// .services-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 2em;
+// }
+
+// .services-title {
+//   color: #5b6377;
+//   font-weight: 100;
+// }
+
+// .swiper {
+//   width: 100%;
+//   padding: 2rem 0;
+// }
+
+// .swiper-card-wrapper {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .services-card {
+//   position: relative;
+//   overflow: hidden;
+//   aspect-ratio: 4/3;
+//   display: flex;
+//   flex-direction: column;
+//   border-radius: 7px;
+//   box-shadow: rgba(255, 255, 255, 0.3) 0 5vw 6vw -8vw,
+//     rgba(255, 255, 255, 0) 0 4.5vw 5vw -6vw,
+//     rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw, rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+//   transition: box-shadow 1s var(--cover-ease);
+//   width: 90%;
+//   // max-width: 300px;
+//   max-height: 85vh;
+//   margin-block: calc(4em + 2vw);
+
+//   /* ====== Медиа для разных смартфонов ====== */
+//   @media screen and (max-width: 400px) and (orientation: portrait) {
+//     max-width: 360px;
+//   }
+
+//   @media screen and (max-width: 576px) and (orientation: portrait) {
+//     max-width: 500px;
+//   }
+
+//   @media screen and (max-width: 768px) and (orientation: portrait) {
+//     max-width: 700px;
+//   }
+
+//   & > * {
+//     z-index: 2;
+//   }
+
+//   & > img {
+//     z-index: 0;
+//     transition: all 0.8s var(--cover-ease);
+//   }
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     width: 100%;
+//     height: 50%;
+//     top: 0;
+//     left: 0;
+//     background: rgba(0, 0, 0, 0.5);
+//     position: absolute;
+//     transform-origin: left;
+//     transform: scaleX(0);
+//     transition: all var(--cover-timing) var(--cover-ease);
+//     z-index: 1;
+//   }
+
+//   &::after {
+//     transition-delay: var(--cover-stagger);
+//     top: 50%;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: white 0 5vw 6vw -9vw, var(--highlight) 0 5.5vw 5vw -7.5vw,
+//       rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw,
+//       rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+
+//     &::before,
+//     &::after {
+//       transform: scaleX(1);
+//     }
+
+//     & h2 .char,
+//     & p .word {
+//       opacity: 1;
+//       transform: translateY(0);
+//       color: inherit;
+//     }
+
+//     & h2 .char {
+//       transition-delay: calc(0.1s + var(--char-index) * var(--title-stagger));
+//     }
+
+//     & p .word {
+//       transition-delay: calc(0.1s + var(--word-index) * var(--text-stagger));
+//     }
+
+//     & img {
+//       transform: scale(1.1);
+//     }
+//   }
+
+//   &:nth-of-type(1) {
+//     --highlight: coral;
+//   }
+
+//   &:nth-of-type(2) {
+//     --highlight: #56ffe5;
+//   }
+
+//   @media screen and (min-width: 600px) {
+//     width: 40vw;
+//   }
+// }
+
+// .services-text {
+//   // position: absolute;
+//   // inset: 20px;
+//   // top: auto;
+//   // color: white;
+
+//     position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   text-align: center; /* если нужен центр по горизонтали */
+//   color: white;
+//   padding: 1rem; /* можно оставить немного отступа внутри */
+// }
+
+// .services-text h2 {
+//   font-size: clamp(20px, 4vw, 40px);
+//   font-weight: 800;
+//   margin-bottom: 0.2em;
+// }
+
+// .services-text p {
+//   font-size: clamp(10px, 1.25vw, 14px);
+//   line-height: 1.4;
+//   text-align: justify;
+//   margin-top: 0.2em;
+//   margin-bottom: 0;
+// }
+
+// .services-text h2 .char,
+// .services-text p .word {
+//   color: var(--highlight);
+//   display: inline-block;
+//   opacity: 0;
+//   position: relative;
+//   transform: translateY(20px);
+//   transition-property: transform, opacity, color;
+//   transition-timing-function: var(--text-ease);
+//   transition-duration: var(--text-timing), var(--text-timing),
+//     calc(var(--text-timing) * 2);
+// }
+
+// .services-card img {
+//   position: absolute;
+//   inset: 0;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   border-radius: 7px;
+// }
+
+// Лучшая версия
+
+// :root {
+//   --cover-timing: 0.5s;
+//   --cover-ease: cubic-bezier(0.66, 0.08, 0.19, 0.97);
+//   --cover-stagger: 0.15s;
+
+//   --text-timing: 0.75s;
+//   --text-stagger: 0.015s;
+//   --text-ease: cubic-bezier(0.38, 0.26, 0.05, 1.07);
+
+//   --title-stagger: 0.05s;
+//   --highlight: white;
+// }
+
+// .services-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 2em;
+// }
+
+// .services-title {
+//   color: #5b6377;
+//   font-weight: 100;
+// }
+
+// .swiper {
+//   width: 100%;
+//   padding: 2rem 0;
+// }
+
+// .swiper-card-wrapper {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .services-card {
+//   position: relative;
+//   overflow: hidden;
+//   aspect-ratio: 4/3;
+//   display: flex;
+//   flex-direction: column;
+//   border-radius: 7px;
+//   box-shadow: rgba(255, 255, 255, 0.3) 0 5vw 6vw -8vw,
+//     rgba(255, 255, 255, 0) 0 4.5vw 5vw -6vw,
+//     rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw, rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+//   transition: box-shadow 1s var(--cover-ease);
+//   width: 90%;
+//   // max-width: 300px;
+//   max-height: 85vh;
+//   margin-block: calc(4em + 2vw);
+
+//   /* Локально усилим «волну», не трогая root */
+//   --title-stagger: 0.08s;
+//   --text-stagger: 0.04s;
+//   --text-ease: cubic-bezier(0.25, 1.5, 0.5, 1); /* упругая кривая */
+
+//   /* ====== Медиа для разных смартфонов ====== */
+//   @media screen and (max-width: 400px) and (orientation: portrait) {
+//     max-width: 360px;
+//   }
+
+//   @media screen and (max-width: 576px) and (orientation: portrait) {
+//     max-width: 500px;
+//   }
+
+//   @media screen and (max-width: 768px) and (orientation: portrait) {
+//     max-width: 700px;
+//   }
+
+//   & > * {
+//     z-index: 2;
+//   }
+
+//   & > img {
+//     z-index: 0;
+//     transition: all 0.8s var(--cover-ease);
+//   }
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     width: 100%;
+//     height: 50%;
+//     top: 0;
+//     left: 0;
+//     background: rgba(0, 0, 0, 0.5);
+//     position: absolute;
+//     transform-origin: left;
+//     transform: scaleX(0);
+//     transition: all var(--cover-timing) var(--cover-ease);
+//     z-index: 1;
+//   }
+
+//   &::after {
+//     transition-delay: var(--cover-stagger);
+//     top: 50%;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: white 0 5vw 6vw -9vw, var(--highlight) 0 5.5vw 5vw -7.5vw,
+//       rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw,
+//       rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+
+//     &::before,
+//     &::after {
+//       transform: scaleX(1);
+//     }
+
+//     & h2 .char,
+//     & p .word {
+//       opacity: 1;
+//       /* добавим сброс поворота/масштаба для плавного «прилипания» */
+//       transform: translateY(0) rotate(0) scale(1);
+//       color: inherit;
+//     }
+
+//     & h2 .char {
+//       transition-delay: calc(0.1s + var(--char-index) * var(--title-stagger));
+//     }
+
+//     & p .word {
+//       transition-delay: calc(0.1s + var(--word-index) * var(--text-stagger));
+//     }
+
+//     & img {
+//       transform: scale(1.1);
+//     }
+//   }
+
+//   &:nth-of-type(1) {
+//     --highlight: coral;
+//   }
+
+//   &:nth-of-type(2) {
+//     --highlight: #56ffe5;
+//   }
+
+//   @media screen and (min-width: 600px) {
+//     width: 40vw;
+//   }
+// }
+
+// /* Центрируем блок текста по карточке */
+// .services-text {
+//   // position: absolute;
+//   // inset: 20px;
+//   // top: auto;
+//   // color: white;
+
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   text-align: center; /* центр по горизонтали */
+//   color: white;
+//   padding: 1rem;
+// }
+
+// .services-text h2 {
+//   font-size: clamp(20px, 4vw, 40px);
+//   font-weight: 800;
+//   margin-bottom: 0.2em;
+// }
+
+// .services-text p {
+//   font-size: clamp(10px, 1.25vw, 14px);
+//   line-height: 1.4;
+//   text-align: justify;
+//   margin-top: 0.2em;
+//   margin-bottom: 0;
+// }
+
+// /* Исходное состояние для «волны»: больше смещение, лёгкий поворот и scale */
+// .services-text h2 .char,
+// .services-text p .word {
+//   color: var(--highlight);
+//   display: inline-block;
+//   opacity: 0;
+//   position: relative;
+//   transform: translateY(40px) rotate(3deg) scale(0.96);
+//   transition-property: transform, opacity, color, text-shadow;
+//   transition-timing-function: var(--text-ease);
+//   transition-duration: var(--text-timing), var(--text-timing),
+//     calc(var(--text-timing) * 2);
+//   text-shadow: 0 0 6px rgba(255, 255, 255, 0.45);
+//   will-change: transform, opacity;
+// }
+
+// .services-card img {
+//   position: absolute;
+//   inset: 0;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   border-radius: 7px;
+// }
+
+@use "../../assets/variables.scss" as v;
+
 :root {
   --cover-timing: 0.5s;
   --cover-ease: cubic-bezier(0.66, 0.08, 0.19, 0.97);
@@ -513,6 +904,13 @@
   max-height: 85vh;
   margin-block: calc(4em + 2vw);
 
+  cursor: pointer; /* указатель кликабельности */
+
+  /* Локально усилим «волну», не трогая root */
+  --title-stagger: 0.08s;
+  --text-stagger: 0.04s;
+  --text-ease: cubic-bezier(0.25, 1.5, 0.5, 1); /* упругая кривая */
+
   /* ====== Медиа для разных смартфонов ====== */
   @media screen and (max-width: 400px) and (orientation: portrait) {
     max-width: 360px;
@@ -555,8 +953,10 @@
     top: 50%;
   }
 
+  /* ЗДЕСЬ: добавил &.is-active — применяет те же правила, что hover/focus */
   &:hover,
-  &:focus {
+  &:focus,
+  &.is-active {
     box-shadow: white 0 5vw 6vw -9vw, var(--highlight) 0 5.5vw 5vw -7.5vw,
       rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw,
       rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
@@ -569,7 +969,8 @@
     & h2 .char,
     & p .word {
       opacity: 1;
-      transform: translateY(0);
+      /* добавим сброс поворота/масштаба для плавного «прилипания» */
+      transform: translateY(0) rotate(0) scale(1);
       color: inherit;
     }
 
@@ -599,11 +1000,15 @@
   }
 }
 
+/* Центрируем блок текста по карточке */
 .services-text {
   position: absolute;
-  inset: 20px;
-  top: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* центр по горизонтали */
   color: white;
+  padding: 1rem;
 }
 
 .services-text h2 {
@@ -620,17 +1025,20 @@
   margin-bottom: 0;
 }
 
+/* Исходное состояние для «волны»: больше смещение, лёгкий поворот и scale */
 .services-text h2 .char,
 .services-text p .word {
   color: var(--highlight);
   display: inline-block;
   opacity: 0;
   position: relative;
-  transform: translateY(20px);
-  transition-property: transform, opacity, color;
+  transform: translateY(40px) rotate(3deg) scale(0.96);
+  transition-property: transform, opacity, color, text-shadow;
   transition-timing-function: var(--text-ease);
   transition-duration: var(--text-timing), var(--text-timing),
     calc(var(--text-timing) * 2);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.45);
+  will-change: transform, opacity;
 }
 
 .services-card img {
@@ -640,4 +1048,45 @@
   height: 100%;
   object-fit: cover;
   border-radius: 7px;
+}
+
+.services-info {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-weight: bold;
+  color: v.$lightНellow;
+  font-size: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid v.$lightНellow;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: blink 1.5s infinite alternate;
+  pointer-events: none;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Пропадает при hover или активной карточке */
+.services-card:hover .services-info,
+.services-card.is-active .services-info {
+  display: none;
+  opacity: 0; /* плавно исчезает */
 }
