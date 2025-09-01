@@ -122,11 +122,6 @@
 //   transform: translateY(0);
 // }
 
-
-
-
-
-
 // /* Services.scss */
 // :root {
 //   --cover-timing: 0.5s;
@@ -295,11 +290,6 @@
 //   object-fit: cover;
 //   border-radius: 7px;
 // }
-
-
-
-
-
 
 // /* Services.scss */
 // :root {
@@ -471,9 +461,6 @@
 //   border-radius: 7px;
 // }
 
-
-
-
 /* Services.scss */
 :root {
   --cover-timing: 0.5s;
@@ -513,21 +500,31 @@
 .services-card {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 9/12;
+  aspect-ratio: 4/3;
   display: flex;
   flex-direction: column;
   border-radius: 7px;
   box-shadow: rgba(255, 255, 255, 0.3) 0 5vw 6vw -8vw,
     rgba(255, 255, 255, 0) 0 4.5vw 5vw -6vw,
-    rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw,
-    rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+    rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw, rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
   transition: box-shadow 1s var(--cover-ease);
   width: 90%;
-  max-width: 300px;
+  // max-width: 300px;
+  max-height: 85vh;
+  margin-block: calc(4em + 2vw);
 
-      //   max-width: 600px;
-      // aspect-ratio: 4/3;
-      // max-height: 85vh;
+  /* ====== Медиа для разных смартфонов ====== */
+  @media screen and (max-width: 400px) and (orientation: portrait) {
+    max-width: 360px;
+  }
+
+  @media screen and (max-width: 576px) and (orientation: portrait) {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 768px) and (orientation: portrait) {
+    max-width: 700px;
+  }
 
   & > * {
     z-index: 2;
@@ -644,5 +641,3 @@
   object-fit: cover;
   border-radius: 7px;
 }
-
-

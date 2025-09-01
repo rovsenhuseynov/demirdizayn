@@ -392,7 +392,7 @@ const Services = () => {
         breakpoints={{
           320: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1200: { slidesPerView: 3 },
+          1200: { slidesPerView: 2 },
         }}
       >
         {servicesPageData.map((card, index) => (

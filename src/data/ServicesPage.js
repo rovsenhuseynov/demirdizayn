@@ -4,7 +4,7 @@ import icon2 from "../assets/icons/icons_services/Metal-Works.svg";
 import icon3 from "../assets/icons/icons_services/Welding Works.svg";
 
 // Импорты изображений для Services.jsx
-import designImg from "../assets/images/backgrounds/Background welding work.webp";
+import designImg from "../assets/images/Services/Loft design welding.jpg";
 import drawingImg from "../assets/images/backgrounds/Background welding work.webp";
 import deliveryImg from "../assets/images/backgrounds/Background welding work.webp";
 import montageImg1 from "../assets/images/backgrounds/Background welding work.webp";
