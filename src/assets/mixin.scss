@@ -391,7 +391,7 @@
 }
 
 @mixin section-title-style {
-  margin-bottom: calc(4vh + 2rem);
+  margin-bottom: calc(4svh + 2rem);
   text-align: center;
   color: v.$activeStateColor;
   text-shadow: 0 0 3px rgb(0, 0, 0);
@@ -409,7 +409,7 @@
 
 @mixin button-styles {
   margin-top: 1rerm;
-  margin-bottom: calc(4vh + 2rem);
+  margin-bottom: calc(4svh + 2rem);
   text-align: center;
   font-size: v.$font-size-mini-3;
 

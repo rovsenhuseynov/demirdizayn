@@ -349,7 +349,7 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 40px;
-    max-width: 80vw;
+    max-width: 80svw;
     margin: calc(3vw + 2rem) auto;
     flex-wrap: nowrap;
 
@@ -481,7 +481,7 @@
 
       img {
         margin: 0 auto;
-        max-width: 70vw;
+        max-width: 70svw;
         object-fit: cover;
       }
     }
