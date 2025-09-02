@@ -9,6 +9,12 @@
   .aboutus-slider {
     border-radius: 12px;
     overflow: hidden;
+      width: 100%;
+  height: 100%;
+  object-fit: cover; // равномерное заполнение без скачков
+  display: block; // убирает лишние пробелы
+  transform: translateZ(0); // включает GPU-рендеринг
+  backface-visibility: hidden; // уменьшает артефакты
 
     &__overlay {
       position: relative;
