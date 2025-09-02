@@ -19,13 +19,14 @@ import slider1_Portrait from "../assets/images/backgrounds/stool-wooden-backgrou
 import slider2 from "../assets/images/backgrounds/Loft-chair-and-table.webp";
 import slider2_Portrait from "../assets/images/backgrounds/Loft-chair-and-table-portrait.webp";
 import slider3 from "../assets/images/backgrounds/with-clocks_big.webp"; // портретной версии нет
+import slider3_Portrait from "../assets/images/backgrounds/with-clocks_big-portrait.webp"; 
 
 const aboutData = {
   // ------------------ новые слайдерные изображения ------------------
   sliderImages: [
     { image: slider1, imagePortrait: slider1_Portrait },
     { image: slider2, imagePortrait: slider2_Portrait },
-    { image: slider3 },
+    { image: slider3, imagePortrait:slider3_Portrait },
   ],
 
   hero: {
