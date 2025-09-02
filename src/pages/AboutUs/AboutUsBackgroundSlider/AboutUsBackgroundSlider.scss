@@ -16,10 +16,7 @@
       text-align: center;
       top: 50%;
       left: 50%;
-      transform: translate(
-        -50%,
-        50%
-      ); // кнопка по центру и по горизонтали и вертикали
+      transform: translate(-50%, 50%);
     }
   }
 
@@ -80,4 +77,10 @@
       }
     }
   }
+}
+
+
+
+.aboutus-slider {
+  height: 90svh !important;
 }
