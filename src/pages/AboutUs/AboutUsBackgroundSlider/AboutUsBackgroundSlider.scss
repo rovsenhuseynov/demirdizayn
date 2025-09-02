@@ -6,6 +6,7 @@
   flex-direction: column;
   gap: 0.1rem; // расстояние между текстом и слайдером
   margin-bottom: clamp(1rem, 2rem, 3rem); // отступ снизу для секции
+
   .aboutus-slider {
     border-radius: 12px;
     overflow: hidden;
@@ -79,9 +80,3 @@
     }
   }
 }
-
-
-
-// .aboutus-slider {
-  
-// }
