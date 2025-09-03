@@ -64,11 +64,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./CtaSection.scss";
-import ReusableButton from "../Button/ReusableButton";
-import { useNavigate } from "react-router-dom";
+import ReusableButton from "../../../../reusableСomponents/Button/ReusableButton";
 
 const CtaSection = () => {
-  const navigate = useNavigate();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -89,10 +87,7 @@ const CtaSection = () => {
         </h3>
         <p>Bizimlə əlaqə saxlayın və ideyalarınızı gerçəkləşdirək.</p>
 
-        <ReusableButton
-          className="cta-clean__btn"
-          onClick={() => navigate("/contacts")}
-        >
+        <ReusableButton className="cta-light__btn">
           Əlaqə saxlayın
         </ReusableButton>
       </div>

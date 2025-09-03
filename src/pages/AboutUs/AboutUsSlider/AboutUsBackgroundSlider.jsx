@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import BackgroundSlider from "../../../reusableСomponents/BackgroundSlider/BackgroundSlider";
-import ReusableButton from "../../../reusableСomponents/Button/ReusableButton";
 import aboutData from "../../../data/aboutData";
 import "./AboutUsBackgroundSlider.scss";
+import CtaSection from "./AboutCta/CtaSection";
+
 
 const AboutUsBackgroundSlider = () => {
-  const navigate = useNavigate();
+
 
   const [isPortrait, setIsPortrait] = useState(
     window.innerHeight > window.innerWidth
@@ -27,20 +27,10 @@ const AboutUsBackgroundSlider = () => {
 
   return (
     <section className="aboutus-cta">
-      {/* Контент над слайдером */}
-      <div className="cta-clean" data-aos="fade-up">
-        <div className="cta-clean__inner">
-          <h3>
-            Əgər qeyri-adi həllər axtarırsınızsa, öz konsepsiyanızı həyata
-            keçirmək istəyirsinizsə və ya sadəcə keyfiyyətli metalın və “loft”
-            üslubunun ahəngini dəyərləndirirsinizsə — əməkdaşlığa hazırıq. Sizin
-            arzularınız, bizim bacarığımız — nəticə sizi xoş təəccübləndirəcək.
-          </h3>
-          <p>Bizimlə əlaqə saxlayın və ideyalarınızı gerçəkləşdirək.</p>
-        </div>
-      </div>
+      {/* Контекст */}
+      <CtaSection />
 
-      {/* Слайдер с кнопкой по центру */}
+      {/* Слайдер */}
       <BackgroundSlider
         images={images}
         interval={5000}
@@ -49,16 +39,6 @@ const AboutUsBackgroundSlider = () => {
         scale={1.1}
         height={isPortrait ? "60dvh" : "90dvh"}
         width="100%"
-        overlay={
-          <div className="aboutus-slider__overlay">
-            <ReusableButton
-              className="cta-clean__btn"
-              onClick={() => navigate("/contacts")}
-            >
-              Əlaqə saxlayın
-            </ReusableButton>
-          </div>
-        }
         className="aboutus-slider"
       />
     </section>

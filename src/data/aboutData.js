@@ -16,17 +16,20 @@ import galleryImg4_big from "../assets/images/content_images/Mangal_big.webp";
 // ------------------ новые изображения слайдера сверху ------------------
 import slider1 from "../assets/images/backgrounds/stool-wooden-background.webp";
 import slider1_Portrait from "../assets/images/backgrounds/stool-wooden-background-portrait.webp";
-import slider2 from "../assets/images/backgrounds/Loft-chair-and-table.webp";
+import slider2 from "../assets/images/backgrounds/Cta-Loft-chair-and-table.webp";
 import slider2_Portrait from "../assets/images/backgrounds/Loft-chair-and-table-portrait.webp";
-import slider3 from "../assets/images/backgrounds/with-clocks_big.webp"; // портретной версии нет
+import slider3 from "../assets/images/backgrounds/with-clocks_big.webp";
 import slider3_Portrait from "../assets/images/backgrounds/with-clocks_big-portrait.webp"; 
+import slider4 from "../assets/images/backgrounds/Console_table.webp";
+import slider4_Portrait from "../assets/images/backgrounds/Console_table-portrait.webp";
 
 const aboutData = {
   // ------------------ новые слайдерные изображения ------------------
   sliderImages: [
     { image: slider1, imagePortrait: slider1_Portrait },
     { image: slider2, imagePortrait: slider2_Portrait },
-    { image: slider3, imagePortrait:slider3_Portrait },
+    { image: slider3, imagePortrait: slider3_Portrait },
+    { image: slider4, imagePortrait: slider4_Portrait },
   ],
 
   hero: {

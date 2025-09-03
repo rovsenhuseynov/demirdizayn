@@ -1,10 +1,12 @@
 import "./AboutUs.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import aboutData from "../../data/aboutData";
-import AboutGallery from "./AboutGallery/AboutGallery";
-import AboutUsBackgroundSlider from "./AboutUsBackgroundSlider/AboutUsBackgroundSlider";
+import AboutGallery from "./SomeWorks/AboutGallery";
+import AboutJurActivity from "./AboutJurActivity/AboutJurActivity";
+import AboutUsBackgroundSlider from "./AboutUsSlider/AboutUsBackgroundSlider";
+
 
 const AboutUs = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -27,15 +29,6 @@ const AboutUs = () => {
     AOS.refresh();
   }, [isMobile]);
 
-  const fadeLeft = useMemo(
-    () => (isMobile ? "fade-up" : "fade-left"),
-    [isMobile]
-  );
-  const fadeRight = useMemo(
-    () => (isMobile ? "fade-up" : "fade-right"),
-    [isMobile]
-  );
-
   return (
     <section className="about">
       <h1 className="about__title" data-aos="fade-up">
@@ -50,35 +43,11 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <div className="about__split">
-        <section className="about__split-left" data-aos={fadeRight}>
-          <h2 className="about__split-title">{aboutData.ourWork.title}</h2>
-          {aboutData.ourWork.text.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
-          <div className="about__split-image">
-            <img src={aboutData.ourWork.image} alt="Missiya" />
-          </div>
-        </section>
-
-        <section className="about__split-right" data-aos={fadeLeft}>
-          {aboutData.cards.map((card, i) => (
-            <div className="about__card-vertical" key={i}>
-              <img className="about__card-image" src={card.icon} alt="icon" />
-              <div>
-                <h3>{card.title}</h3>
-                <p>{card.description}</p>
-              </div>
-            </div>
-          ))}
-        </section>
-      </div>
-
-      {/* передаём именно массив */}
+      <AboutJurActivity />
       <AboutGallery items={aboutData.galleryItems} />
-
-      {/* <CtaSection /> */}
       <AboutUsBackgroundSlider />
+      
+
     </section>
   );
 };
