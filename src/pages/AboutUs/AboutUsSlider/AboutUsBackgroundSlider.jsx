@@ -4,10 +4,7 @@ import aboutData from "../../../data/aboutData";
 import "./AboutUsBackgroundSlider.scss";
 import CtaSection from "./AboutCta/CtaSection";
 
-
 const AboutUsBackgroundSlider = () => {
-
-
   const [isPortrait, setIsPortrait] = useState(
     window.innerHeight > window.innerWidth
   );
@@ -35,7 +32,7 @@ const AboutUsBackgroundSlider = () => {
         images={images}
         interval={5000}
         transition={2000}
-        blur={25}
+        blur={1}
         scale={1.1}
         height={isPortrait ? "60dvh" : "90dvh"}
         width="100%"

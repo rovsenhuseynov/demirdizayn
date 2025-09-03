@@ -4,16 +4,17 @@
 .aboutus-cta {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem; // расстояние между текстом и слайдером
-  margin-bottom: clamp(1rem, 2rem, 3rem); // отступ снизу для секции
+  gap: 0.1rem; 
+  margin-bottom: clamp(1rem, 2rem, 3rem); 
 
   .aboutus-slider {
     border-radius: 12px;
-    overflow: hidden;
-    height: 90svh !important;
+    overflow: visible; 
+    height: 90svh;
+    position: relative;
 
     &__overlay {
-      position: relative;
+      position: absolute; 
       z-index: 2;
       text-align: center;
       top: 50%;
