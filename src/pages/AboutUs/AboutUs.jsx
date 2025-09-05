@@ -7,7 +7,6 @@ import AboutGallery from "./SomeWorks/AboutGallery";
 import AboutJurActivity from "./AboutJurActivity/AboutJurActivity";
 import AboutUsBackgroundSlider from "./AboutUsSlider/AboutUsBackgroundSlider";
 
-
 const AboutUs = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -46,8 +45,6 @@ const AboutUs = () => {
       <AboutJurActivity />
       <AboutGallery items={aboutData.galleryItems} />
       <AboutUsBackgroundSlider />
-      
-
     </section>
   );
 };
