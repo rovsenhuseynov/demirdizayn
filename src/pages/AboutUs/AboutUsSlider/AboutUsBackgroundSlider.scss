@@ -1,3 +1,32 @@
+// @use "../../../assets/mixin.scss" as m;
+// @use "../../../assets/variables.scss" as v;
+
+// .aboutus-cta {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 0.1rem; 
+//   margin-bottom: clamp(1rem, 2rem, 3rem); 
+
+//   .aboutus-slider {
+//     border-radius: 12px;
+//     overflow: visible; 
+//     height: 90svh;
+//     position: relative;
+
+//     &__overlay {
+//       position: absolute; 
+//       z-index: 2;
+//       text-align: center;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, 50%);
+//     }
+//   }
+// }
+
+
+
+
 @use "../../../assets/mixin.scss" as m;
 @use "../../../assets/variables.scss" as v;
 
@@ -10,7 +39,6 @@
   .aboutus-slider {
     border-radius: 12px;
     overflow: visible; 
-    height: 90svh;
     position: relative;
 
     &__overlay {
