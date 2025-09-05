@@ -47,7 +47,6 @@
 
 
 
-
 import { useEffect, useState } from "react";
 import BackgroundSlider from "../../../reusableСomponents/BackgroundSlider/BackgroundSlider";
 import aboutData from "../../../data/aboutData";
@@ -55,9 +54,7 @@ import "./AboutUsBackgroundSlider.scss";
 import CtaSection from "./AboutCta/CtaSection";
 
 const AboutUsBackgroundSlider = () => {
-  const [isPortrait, setIsPortrait] = useState(
-    window.innerHeight > window.innerWidth
-  );
+  const [isPortrait, setIsPortrait] = useState(window.innerHeight > window.innerWidth);
   const [sliderHeight, setSliderHeight] = useState(
     Math.round(window.innerHeight * (window.innerHeight > window.innerWidth ? 0.6 : 0.9))
   );
@@ -66,14 +63,13 @@ const AboutUsBackgroundSlider = () => {
     const handleResize = () => {
       const portrait = window.innerHeight > window.innerWidth;
       setIsPortrait(portrait);
-      // обновляем высоту только при смене ориентации
-      if (portrait !== (sliderHeight / window.innerHeight > 0.75)) {
-        setSliderHeight(Math.round(window.innerHeight * (portrait ? 0.6 : 0.9)));
-      }
+      // Обновляем высоту только если ориентация изменилась
+      setSliderHeight(Math.round(window.innerHeight * (portrait ? 0.6 : 0.9)));
     };
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [sliderHeight]);
+  }, []);
 
   // Формируем массив изображений с учётом портретных версий
   const images = aboutData.sliderImages.map((img) =>
@@ -92,7 +88,7 @@ const AboutUsBackgroundSlider = () => {
         transition={2000}
         blur={1}
         scale={1.1}
-        height={`${sliderHeight}px`} // передаем фиксированную высоту
+        height={`${sliderHeight}px`} // фиксированная высота
         width="100%"
         className="aboutus-slider"
       />

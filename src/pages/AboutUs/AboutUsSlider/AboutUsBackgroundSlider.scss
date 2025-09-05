@@ -26,7 +26,6 @@
 
 
 
-
 @use "../../../assets/mixin.scss" as m;
 @use "../../../assets/variables.scss" as v;
 
@@ -38,7 +37,7 @@
 
   .aboutus-slider {
     border-radius: 12px;
-    overflow: visible; 
+    overflow: hidden; // фиксируем, чтобы изображения не вылезали
     position: relative;
 
     &__overlay {
