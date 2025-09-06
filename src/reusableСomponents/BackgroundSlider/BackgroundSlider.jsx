@@ -9,10 +9,20 @@
 //   scale = 1.05,
 //   overlay = null,
 //   className = "",
-//   height = "75svh", // занимает 75% высоты экрана
+//   heightPercent = 75, // высота слайдера в процентах экрана
 //   width = "100%",
 // }) => {
 //   const [index, setIndex] = useState(0);
+//   const [sliderHeight, setSliderHeight] = useState(0);
+
+//   useEffect(() => {
+//     const updateHeight = () => {
+//       setSliderHeight(window.innerHeight * (heightPercent / 100));
+//     };
+//     updateHeight(); // вычисляем сразу
+//     window.addEventListener("resize", updateHeight);
+//     return () => window.removeEventListener("resize", updateHeight);
+//   }, [heightPercent]);
 
 //   useEffect(() => {
 //     if (!images || images.length <= 1) return;
@@ -26,7 +36,7 @@
 //     <div
 //       className={`bg-slider ${className}`}
 //       style={{
-//         height,
+//         height: sliderHeight,
 //         width,
 //         position: "relative",
 //         overflow: "hidden",
@@ -65,6 +75,7 @@
 
 
 
+
 import { useEffect, useState } from "react";
 import "./BackgroundSlider.scss";
 
@@ -80,15 +91,22 @@ const BackgroundSlider = ({
   width = "100%",
 }) => {
   const [index, setIndex] = useState(0);
-  const [sliderHeight, setSliderHeight] = useState(0);
+  const [sliderHeight, setSliderHeight] = useState(
+    Math.round(window.innerHeight * (heightPercent / 100))
+  );
 
   useEffect(() => {
-    const updateHeight = () => {
-      setSliderHeight(window.innerHeight * (heightPercent / 100));
+    const handleResize = () => {
+      // Пересчитываем только при смене ориентации, а не при каждом изменении innerHeight
+      const { innerWidth, innerHeight } = window;
+      const isPortrait = innerHeight > innerWidth;
+      setSliderHeight(Math.round(innerHeight * (heightPercent / 100)));
+
+      // Если хотите ещё надёжнее — можно добавить debounce на resize
     };
-    updateHeight(); // вычисляем сразу
-    window.addEventListener("resize", updateHeight);
-    return () => window.removeEventListener("resize", updateHeight);
+
+    window.addEventListener("orientationchange", handleResize);
+    return () => window.removeEventListener("orientationchange", handleResize);
   }, [heightPercent]);
 
   useEffect(() => {
@@ -103,7 +121,7 @@ const BackgroundSlider = ({
     <div
       className={`bg-slider ${className}`}
       style={{
-        height: sliderHeight,
+        height: `${sliderHeight}px`, // фиксированная высота
         width,
         position: "relative",
         overflow: "hidden",
