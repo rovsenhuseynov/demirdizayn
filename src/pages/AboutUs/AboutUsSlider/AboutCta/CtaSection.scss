@@ -1,12 +1,70 @@
+// @use "../../../../assets/mixin.scss" as m;
+// @use "../../../../assets/variables.scss" as v;
+
+// .cta-clean {
+//   width: 95svw;
+//   text-align: center;
+//   background: transparent;
+//   border-radius: 20px;
+
+
+//   .cta-clean__inner {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 2rem 1rem;
+
+//     h3 {
+//       @include m.heading-font(4);
+//       line-height: 1.6;
+//       margin-bottom: 1rem;
+
+//       strong {
+//         font-weight: 100;
+//         text-shadow: 0 0 3cm rgba(0, 0, 0, 0.1);
+//       }
+//     }
+
+//     .cta-subtitle {
+//       @include m.heading-font(4);
+//       line-height: 1.6;
+//       margin-bottom: 1.5rem;
+//     }
+
+//     .cta-text {
+//       margin-bottom: 2rem;
+//       @include m.heading-font(4);
+//     }
+
+//     .cta-light__btn {
+//       @include m.button-styles;
+//       transition: background 0.3s ease;
+//       display: inline-block;
+//       margin: calc(1rem + 2vw) auto;
+//       align-self: center;
+//       width: auto;
+//       max-width: 100%;
+//     }
+//   }
+// }
+
+
+
+
+
 @use "../../../../assets/mixin.scss" as m;
 @use "../../../../assets/variables.scss" as v;
 
 .cta-clean {
-  width: 95svw;
+  width: 100%;             
+  max-width: 95vw;         
+  margin: 0 auto;
   text-align: center;
   background: transparent;
   border-radius: 20px;
-
 
   .cta-clean__inner {
     max-width: 800px;
@@ -50,4 +108,3 @@
     }
   }
 }
-
