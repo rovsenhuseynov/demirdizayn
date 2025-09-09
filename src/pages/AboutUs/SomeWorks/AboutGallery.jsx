@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AboutGallery.scss";
-import ReusableButton from "../../../reusableСomponents/Button/ReusableButton";
+import ReusableButton from "../../../reusableComponents/Button/ReusableButton";
 
 const AboutGallery = ({ items }) => {
   const [active, setActive] = useState(null);

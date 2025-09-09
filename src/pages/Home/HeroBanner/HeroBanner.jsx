@@ -1,4 +1,4 @@
-import ReusableButton from "../../../reusableСomponents/Button/ReusableButton";
+import ReusableButton from "../../../reusableComponents/Button/ReusableButton";
 import { useNavigate } from "react-router-dom";
 import "./HeroBanner.scss";
 

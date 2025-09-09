@@ -1,9 +1,10 @@
-import Logo from "../../reusableСomponents/Logo/Logo";
+// import Logo from "../../reusableСomponents/Logo/Logo";
 import instagramIcon from "../../assets/icons/Social_networks/instagram/instagram.svg";
 import facebookIcon from "../../assets/icons/Social_networks/facebook/facebook.svg";
 import telegramIcon from "../../assets/icons/Social_networks/telegram/telegram.svg";
 import whatsappIcon from "../../assets/icons/Social_networks/whatsapp/whatsapp.svg";
 import "./Footer.scss";
+import Logo from "../../reusableComponents/Logo/Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

@@ -9,38 +9,41 @@ const AboutUsBackgroundSlider = () => {
     window.innerHeight > window.innerWidth
   );
   const [sliderHeight, setSliderHeight] = useState(
-    Math.round(window.innerHeight * 0.75) // фиксируем 75% экрана в пикселях
+    Math.round(
+      window.innerHeight * (window.innerHeight > window.innerWidth ? 0.6 : 0.9)
+    )
   );
 
   useEffect(() => {
     const handleResize = () => {
       const portrait = window.innerHeight > window.innerWidth;
       setIsPortrait(portrait);
-
-      // при смене ориентации пересчитываем высоту
-      setSliderHeight(Math.round(window.innerHeight * 0.75));
+      // Обновляем высоту только если ориентация изменилась
+      setSliderHeight(Math.round(window.innerHeight * (portrait ? 0.6 : 0.9)));
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // массив изображений: портретные/обычные
+  // Формируем массив изображений с учётом портретных версий
   const images = aboutData.sliderImages.map((img) =>
     isPortrait && img.imagePortrait ? img.imagePortrait : img.image
   );
 
   return (
     <section className="aboutus-cta">
+      {/* Контекст */}
       <CtaSection />
 
+      {/* Слайдер */}
       <BackgroundSlider
         images={images}
         interval={5000}
         transition={2000}
         blur={1}
         scale={1.1}
-        height={`${sliderHeight}px`} // фиксированная высота вместо vh
+        height={`${sliderHeight}px`} // фиксированная высота
         width="100%"
         className="aboutus-slider"
       />

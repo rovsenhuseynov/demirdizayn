@@ -5,7 +5,11 @@ import { useEffect, useState } from "react";
 import aboutData from "../../data/aboutData";
 import AboutGallery from "./SomeWorks/AboutGallery";
 import AboutJurActivity from "./AboutJurActivity/AboutJurActivity";
-import AboutUsBackgroundSlider from "./AboutUsSlider/AboutUsBackgroundSlider";
+import PhotoGallery from "../../reusableComponents/PhotoGallery/PhotoGallery";
+
+
+
+
 
 const AboutUs = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -44,7 +48,9 @@ const AboutUs = () => {
 
       <AboutJurActivity />
       <AboutGallery items={aboutData.galleryItems} />
-      <AboutUsBackgroundSlider />  {/* ПРОБЛЕМА ТУТ */}
+      {/* <AboutUsBackgroundSlider />  ПРОБЛЕМА ТУТ */}
+      <PhotoGallery/>
+      
     </section>
   );
 };

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import ReusableButton from "../../../reusableСomponents/Button/ReusableButton";
+import ReusableButton from "../../../reusableComponents/Button/ReusableButton";
 import "./FaqPreview.scss";
 
 const FaqPreview = () => {

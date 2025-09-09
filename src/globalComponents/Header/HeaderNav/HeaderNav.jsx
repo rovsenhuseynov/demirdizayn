@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import "./HeaderNav.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Logo from "../../../reusableСomponents/Logo/Logo";
-import NawDropDownMenu from "../../../reusableСomponents/DropDownMenu/NawDropDownMenu";
+import NawDropDownMenu from "../../../reusableComponents/DropDownMenu/NawDropDownMenu";
+import Logo from "../../../reusableComponents/Logo/Logo";
 
 const HeaderNav = () => {
   const [isOpen, setOpen] = React.useState(false);
