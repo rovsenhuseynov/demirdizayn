@@ -49,7 +49,10 @@ const AboutUs = () => {
       <AboutJurActivity />
       <AboutGallery items={aboutData.galleryItems} />
       {/* <AboutUsBackgroundSlider />  ПРОБЛЕМА ТУТ */}
-      <PhotoGallery/>
+          <PhotoGallery
+      images1={aboutData.aboutGallery.images1}
+      images2={aboutData.aboutGallery.images2}
+    />
       
     </section>
   );

@@ -23,6 +23,19 @@ import slider3_Portrait from "../assets/images/backgrounds/with-clocks_big-portr
 import slider4 from "../assets/images/backgrounds/Console_table.webp";
 import slider4_Portrait from "../assets/images/backgrounds/Console_table-portrait.webp";
 
+
+// импорт новых изображений для блока "About gallery"
+import aboutGalleryImg1 from "../assets/images/aboutUsGallery/Adjustable-height-bar-stool.webp";
+import aboutGalleryImg2 from "../assets/images/aboutUsGallery/Loft-shelf.jpg";
+import aboutGalleryImg3 from "../assets/images/aboutUsGallery/Loft-style-bar-set.jpg";
+import aboutGalleryImg4 from "../assets/images/aboutUsGallery/Loft-style-metal-chair.jpg";
+import aboutGalleryImg5 from "../assets/images/aboutUsGallery/Loft-style-metal-chair_1.jpg";
+import aboutGalleryImg6 from "../assets/images/aboutUsGallery/Loft-style-wall-shelf.jpg";
+import aboutGalleryImg7 from "../assets/images/aboutUsGallery/Loft-table-and-benches.jpg";
+import aboutGalleryImg8 from "../assets/images/aboutUsGallery/mangal_4.jpg";
+
+
+
 const aboutData = {
   // ------------------ новые слайдерные изображения ------------------
   sliderImages: [
@@ -88,6 +101,32 @@ const aboutData = {
       text: "Estetik dizaynlı metal və taxtadan mangal",
     },
   ],
+
+  // изображения для блока "About gallery"
+  aboutGallery: {
+    // ВАЖНО: оставляем по 8 элементов (повторы как в оригинале),
+    // чтобы не менять раскладку/поведение сетки и стилей.
+    images1: [
+      aboutGalleryImg1,
+      aboutGalleryImg2,
+      aboutGalleryImg3,
+      aboutGalleryImg4,
+      aboutGalleryImg1,
+      aboutGalleryImg2,
+      aboutGalleryImg3,
+      aboutGalleryImg4,
+    ],
+    images2: [
+      aboutGalleryImg5,
+      aboutGalleryImg6,
+      aboutGalleryImg7,
+      aboutGalleryImg8,
+      aboutGalleryImg5,
+      aboutGalleryImg6,
+      aboutGalleryImg7,
+      aboutGalleryImg8,
+    ],
+  },
 };
 
 export default aboutData;
