@@ -3,15 +3,15 @@ import aboutIconX_Chair from "../assets/images/content_images/X-Chair.webp";
 import aboutIconClock_Desk from "../assets/images/content_images/Clock-Desk.webp";
 import aboutIconExperience from "../assets/images/content_images/experience.webp";
 
-// импорт новых изображений для блока "About gallery"
+// импорт изображений для блока "About gallery"
 import aboutGalleryImg1 from "../assets/images/aboutUsGallery/Adjustable-height-bar-stool.webp";
-import aboutGalleryImg2 from "../assets/images/aboutUsGallery/Loft-shelf.jpg";
-import aboutGalleryImg3 from "../assets/images/aboutUsGallery/Loft-style-bar-set.jpg";
-import aboutGalleryImg4 from "../assets/images/aboutUsGallery/Loft-style-metal-chair.jpg";
-import aboutGalleryImg5 from "../assets/images/aboutUsGallery/Loft-style-metal-chair_1.jpg";
-import aboutGalleryImg6 from "../assets/images/aboutUsGallery/Loft-style-wall-shelf.jpg";
-import aboutGalleryImg7 from "../assets/images/aboutUsGallery/Loft-table-and-benches.jpg";
-import aboutGalleryImg8 from "../assets/images/aboutUsGallery/mangal_4.jpg";
+import aboutGalleryImg2 from "../assets/images/aboutUsGallery/Loft-shelf.webp";
+import aboutGalleryImg3 from "../assets/images/aboutUsGallery/Loft-style-bar-set.webp";
+import aboutGalleryImg4 from "../assets/images/aboutUsGallery/Loft-style-metal-chair.webp";
+import aboutGalleryImg5 from "../assets/images/aboutUsGallery/Loft-style-metal-chair_1.webp";
+import aboutGalleryImg6 from "../assets/images/aboutUsGallery/Loft-style-wall-shelf.webp";
+import aboutGalleryImg7 from "../assets/images/aboutUsGallery/Loft-table-and-benches.webp";
+import aboutGalleryImg8 from "../assets/images/aboutUsGallery/mangal_4.webp";
 
 const aboutData = {
   hero: {
