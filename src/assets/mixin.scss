@@ -479,6 +479,13 @@
   border: none;
 }
 
+
+@mixin heading-margin {
+  margin: calc(6svw + 3rem) auto calc(4svw + 2rem);
+}
+
+
+
 // Подключаем миксин в SCSS
 
 // @use "../../assets/mixins.scss" as m;

@@ -13,7 +13,7 @@ import galleryImg3_big from "../assets/images/content_images/Loft_Table-Chairs_b
 import galleryImg4 from "../assets/images/content_images/Mangal.webp";
 import galleryImg4_big from "../assets/images/content_images/Mangal_big.webp";
 
-// ------------------ новые изображения слайдера сверху ------------------
+// новые изображения слайдера сверху ------------------
 import slider1 from "../assets/images/backgrounds/stool-wooden-background.webp";
 import slider1_Portrait from "../assets/images/backgrounds/stool-wooden-background-portrait.webp";
 import slider2 from "../assets/images/backgrounds/Cta-Loft-chair-and-table.webp";
