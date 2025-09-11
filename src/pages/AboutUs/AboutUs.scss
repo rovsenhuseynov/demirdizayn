@@ -1,5 +1,5 @@
-@import "../../assets/variables.scss";
-@import "../../assets/mixin.scss";
+@use "../../assets/mixin.scss" as m;
+@use "../../assets/variables.scss" as v;
 
 .about {
   width: 100%;
@@ -7,11 +7,13 @@
   padding-bottom: calc(4svw + 2rem);
   background-color: rgb(245, 245, 245);
   p {
-    @include paragraph-style;
+    // @include m.paragraph-style;
+    @include m.heading-font(4);
+    color: v.$white;
   }
 
   .about__title {
-    font-size: $font-size-h2;
+    @include m.heading-font(1);
     text-align: center;
     font-weight: 800;
     color: #ff6600;
@@ -32,9 +34,9 @@
     .about__overlay {
       background: rgba(0, 0, 0, 0.55);
       padding: calc(2svw + 1rem);
-      border-radius: 16px;
+      margin-inline: 4vw;
+      border-radius: 10px;
       text-align: center;
-      color: $white;
       max-width: 900px;
     }
   }

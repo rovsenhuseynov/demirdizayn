@@ -22,7 +22,7 @@ const Header = () => {
           Qaynaq İşlərİ
         </h1>
         <div className="header__subtitle-clip">
-          <p className="header__subtitle">Yüksək keyfiyyət təminatı</p>
+          <p className="header__subtitle">Keyfiyyətdə üstünlük</p>
         </div>
       </div>
 
