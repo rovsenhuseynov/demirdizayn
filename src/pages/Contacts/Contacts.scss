@@ -102,7 +102,7 @@
       border-radius: 10px;
 
       // Меньшая высота для мобильных в горизонтальной ориентации
-      @media (max-width: 768px) and (orientation: landscape) {
+      @media (max-width: 1024px) and (orientation: landscape) {
         height: 80vh;
       }
     }

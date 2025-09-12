@@ -5,18 +5,21 @@ const Contacts = () => {
   return (
     <div className="contacts-page">
       <ShimmerWave text="BİZİMLƏ ƏLAQƏ SAXLAYIN..." />
-      <p>Мы всегда рады вашим вопросам и предложениям!</p>
+      <p>Suallarınız və təklifləriniz bizi həmişə sevindirir!</p>
 
       <section className="contact-info">
-        <h2>Наши контакты</h2>
-        <p>Адрес: г. Баку, ул. Примерная, 123</p>
+        <h2>Bizim əlaqələr</h2>
+        <p>Adres: Bakı, Təxminən küçəsi, 123</p>
         <p>
-          Телефон: <a href="tel:+994501234567">+994 50 123 45 67</a>
+          Telefon: <a href="tel:+994501234567">+994 50 123 45 67</a>
+        </p>
+        <p>
+          WhatsApp: <a href="tel:+994501234567">+994 50 123 45 67</a>
         </p>
         <p>
           Email: <a href="mailto:info@example.com">info@example.com</a>
         </p>
-        <p>Часы работы: Пн-Пт 09:00–18:00</p>
+        <p>İş saatları: B.e - C 09: 00-18: 00</p>
       </section>
 
       <section className="contact-form">
@@ -42,12 +45,13 @@ const Contacts = () => {
         ></iframe>
       </section>
 
-      <section className="social-links">
-        <h2>Мы в соцсетях</h2>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">LinkedIn</a>
-      </section>
+<section className="social-links">
+  <h2>Мы в соцсетях</h2>
+  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <a href="https://wa.me/79991234567" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+</section>
     </div>
   );
 };
