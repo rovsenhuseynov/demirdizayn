@@ -23,7 +23,7 @@ const Contacts = () => {
       </section>
 
       <section className="contact-form">
-        <h2>Напишите нам</h2>
+        <h2>Bizimlə əlaqə saxlayın</h2>
         <form>
           <input type="text" placeholder="Имя" required />
           <input type="email" placeholder="Email" required />
@@ -45,13 +45,37 @@ const Contacts = () => {
         ></iframe>
       </section>
 
-<section className="social-links">
-  <h2>Мы в соцсетях</h2>
-  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  <a href="https://wa.me/79991234567" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-</section>
+      <section className="social-links">
+        <h2>Мы в соцсетях</h2>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://wa.me/79991234567"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+      </section>
     </div>
   );
 };
