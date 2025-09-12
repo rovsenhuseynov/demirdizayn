@@ -27,7 +27,7 @@ const PhotoGallery = ({ images1 = [], images2 = [] }) => {
 
   return (
     <div className="photo-gallery__outer">
-       <h2 data-aos="fade-up" className="photo-gallery__title">
+      <h2 data-aos="fade-up" className="photo-gallery__title">
         Bəzi görülən işlərimiz
       </h2>
       <div className="photo-gallery__wrapper">

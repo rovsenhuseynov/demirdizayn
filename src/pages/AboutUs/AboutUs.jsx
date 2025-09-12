@@ -6,6 +6,7 @@ import aboutData from "../../data/aboutData";
 import AboutJurActivity from "./AboutJurActivity/AboutJurActivity";
 import PhotoGallery from "../../reusableComponents/PhotoGallery/PhotoGallery";
 import CtaSection from "./AboutCta/CtaSection";
+import ShimmerWave from "../../reusableComponents/ShimmerWave/ShimmerWave";
 
 const AboutUs = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -45,7 +46,9 @@ const AboutUs = () => {
         images1={aboutData.aboutGallery.images1}
         images2={aboutData.aboutGallery.images2}
       />
+      <ShimmerWave text="ƏLAQƏ SAXLAYIN..." />
       <CtaSection />
+      
     </section>
   );
 };

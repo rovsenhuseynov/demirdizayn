@@ -23,7 +23,7 @@ const CtaSection = () => {
           Əgər <strong>qeyri-adi həllər</strong> axtarırsınızsa, öz
           konsepsiyanızı həyata keçirmək istəyirsinizsə və ya sadəcə
           <strong>keyfiyyətli metalı</strong> və{" "}
-          <strong>“loft” üslubunu</strong>
+          <strong>“loft” üslubunu</strong>{" "}
           dəyərləndirirsinizsə — əməkdaşlığa hazırıq.
         </h3>
 
