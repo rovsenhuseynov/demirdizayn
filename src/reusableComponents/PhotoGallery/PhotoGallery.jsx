@@ -20,7 +20,7 @@ const Modal = ({ closeModal, src }) => {
   );
 };
 
-const PhotoGallery = ({ images1 = [], images2 = [] }) => {
+const PhotoGallery = ({title, images1 = [], images2 = [] }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState("");
 
@@ -35,9 +35,11 @@ const PhotoGallery = ({ images1 = [], images2 = [] }) => {
 
   return (
     <div className="photo-gallery__outer">
-      <h2 data-aos="fade-up" className="photo-gallery__title">
-        Bəzi görülən işlərimiz
-      </h2>
+      {title && (
+        <h2 data-aos="fade-up" className="photo-gallery__title">
+          {title}
+        </h2>
+      )}
       <div className="photo-gallery__wrapper">
         <div id="grid-container">
           <div className="grid">

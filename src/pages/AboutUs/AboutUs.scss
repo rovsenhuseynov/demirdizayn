@@ -7,8 +7,8 @@
   padding-bottom: calc(4svw + 2rem);
   background-color: rgb(245, 245, 245);
   p {
-    // @include m.paragraph-style;
-    @include m.heading-font(4);
+    @include m.paragraph-style;
+    // @include m.heading-font(4);
     color: v.$white;
   }
 

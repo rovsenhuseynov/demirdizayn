@@ -43,12 +43,12 @@ const AboutUs = () => {
       </section>
       <AboutJurActivity />
       <PhotoGallery
+        title="Bəzi görülən işlərimiz"
         images1={aboutData.aboutGallery.images1}
         images2={aboutData.aboutGallery.images2}
       />
       <ShimmerWave text="ƏLAQƏ SAXLAYIN..." />
       <CtaSection />
-      
     </section>
   );
 };
