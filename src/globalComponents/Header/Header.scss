@@ -14,9 +14,9 @@
       rgba(255, 255, 255, 0.6) 95%,
       rgba(245, 245, 245, 1) 100%
     ),
-    url(../../assets/images/backgrounds/Loft-chair-and-table.webp);
+    url(../../assets/images/backgrounds/Loft_Composition.webp);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   height: 83vh;
   width: auto;
@@ -32,10 +32,10 @@
         rgba(255, 255, 255, 0.6) 95%,
         rgba(245, 245, 245, 1) 100%
       ),
-      url(../../assets/images/backgrounds/Loft-chair-and-table-mini.webp);
+      url(../../assets/images/backgrounds/Loft_Composition.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: left;
     background-color: v.$background-color;
   }
 

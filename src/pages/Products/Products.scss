@@ -1,0 +1,197 @@
+@use "../../assets/variables.scss" as v;
+
+/* ====== Глобальные переменные анимаций ====== */
+:root {
+  --cover-timing: 0.5s;
+  --cover-ease: cubic-bezier(0.66, 0.08, 0.19, 0.97);
+  --cover-stagger: 0.15s;
+
+  --text-timing: 0.75s;
+  --text-stagger: 0.04s;
+  --text-ease: cubic-bezier(0.25, 1.5, 0.5, 1);
+
+  --title-stagger: 0.08s;
+  --highlight: white;
+}
+
+/* ====== Обёртка страницы ====== */
+.products-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.products-title {
+  color: #5b6377;
+  font-weight: 100;
+  font-size: clamp(24px, 4vw, 36px);
+}
+
+/* ====== Swiper ====== */
+.swiper {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.swiper-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* ====== Карточка товара ====== */
+.products-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  width: 90%;
+  max-height: 85vh;
+  margin-block: calc(4em + 2vw);
+
+  display: block;
+  border-radius: 7px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  box-shadow:
+    rgba(255, 255, 255, 0.3) 0 5vw 6vw -8vw,
+    rgba(255, 255, 255, 0) 0 4.5vw 5vw -6vw,
+    rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw,
+    rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+
+  transition: box-shadow 1s var(--cover-ease);
+
+  /* локальные усиления */
+  --title-stagger: 0.08s;
+  --text-stagger: 0.04s;
+  --text-ease: cubic-bezier(0.25, 1.5, 0.5, 1);
+
+  & > * {
+    z-index: 2;
+  }
+
+  & img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    z-index: 0;
+    transition: transform 0.8s var(--cover-ease);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform var(--cover-timing) var(--cover-ease);
+    z-index: 1;
+  }
+
+  &::after {
+    top: 50%;
+    transition-delay: var(--cover-stagger);
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow:
+      white 0 5vw 6vw -9vw,
+      var(--highlight) 0 5.5vw 5vw -7.5vw,
+      rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw,
+      rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
+
+    &::before,
+    &::after {
+      transform: scaleX(1);
+    }
+
+    img {
+      transform: scale(1.1);
+    }
+
+    h2 .char,
+    p .word {
+      opacity: 1;
+      transform: translateY(0) rotate(0) scale(1);
+    }
+
+    h2 .char {
+      transition-delay: calc(0.1s + var(--char-index) * var(--title-stagger));
+    }
+
+    p .word {
+      transition-delay: calc(0.1s + var(--word-index) * var(--text-stagger));
+    }
+  }
+
+  /* Автоматическая подсветка по номеру слайда */
+  &:nth-of-type(odd) {
+    --highlight: coral;
+  }
+
+  &:nth-of-type(even) {
+    --highlight: #56ffe5;
+  }
+
+  @media (min-width: 600px) {
+    width: 40vw;
+  }
+
+  @media (max-width: 576px) {
+    width: 90%;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+/* ====== Текст поверх изображения ====== */
+.products-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.products-text h2 {
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+
+.products-text p {
+  font-size: clamp(10px, 1.25vw, 14px);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ====== Начальное состояние волны ====== */
+.products-text h2 .char,
+.products-text p .word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px) rotate(3deg) scale(0.96);
+  color: var(--highlight);
+
+  transition-property: transform, opacity, color, text-shadow;
+  transition-duration:
+    var(--text-timing),
+    var(--text-timing),
+    calc(var(--text-timing) * 2);
+  transition-timing-function: var(--text-ease);
+
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.45);
+  will-change: transform, opacity;
+}
