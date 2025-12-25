@@ -1,5 +1,5 @@
-import verticalGrillImg from "../assets/images/aboutUsGallery/Loft-shelf.webp";
-import secondProductImg from "../assets/images/aboutUsGallery/Loft-style-bar-set.webp";
+import verticalGrillImg from "../assets/images/product-images/ekoManqal/ekoManqal_1.webp";
+import secondProductImg from "../assets/images/product-images/НЕТ.png";
 
 // Массив данных для Products.jsx
 export const productsData = [
@@ -11,6 +11,12 @@ export const productsData = [
   },
   {
     title: "Второе изделие",
+    image: secondProductImg,
+    text: "Описание второго изделия",
+    link: "/products/second-product",
+  },
+  {
+    title: "Третье изделие",
     image: secondProductImg,
     text: "Описание второго изделия",
     link: "/products/second-product",
