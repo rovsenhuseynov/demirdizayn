@@ -1,18 +1,18 @@
 @use "../../assets/variables.scss" as v;
 
 /* ====== Глобальные переменные анимаций ====== */
-:root {
-  --cover-timing: 0.5s;
-  --cover-ease: cubic-bezier(0.66, 0.08, 0.19, 0.97);
-  --cover-stagger: 0.15s;
+// :root {
+//   --cover-timing: 0.5s;
+//   --cover-ease: cubic-bezier(0.66, 0.08, 0.19, 0.97);
+//   --cover-stagger: 0.15s;
 
-  --text-timing: 0.75s;
-  --text-stagger: 0.04s;
-  --text-ease: cubic-bezier(0.25, 1.5, 0.5, 1);
+//   --text-timing: 0.75s;
+//   --text-stagger: 0.04s;
+//   --text-ease: cubic-bezier(0.25, 1.5, 0.5, 1);
 
-  --title-stagger: 0.08s;
-  --highlight: white;
-}
+//   --title-stagger: 0.08s;
+//   --highlight: white;
+// }
 
 /* ====== Обёртка страницы ====== */
 .products-wrapper {
@@ -45,6 +45,7 @@
   overflow: hidden;
   aspect-ratio: 4 / 3;
   width: 90%;
+  height: 85vh;
   max-height: 85vh;
   margin-block: calc(4em + 2vw);
 
