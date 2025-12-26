@@ -4,9 +4,9 @@ import thirdProductImg from "../assets/images/product-images/НЕТ.png";
 
 export const productsData = [
   {
-    title: "Вертикальный мангал",
+    title: "МАНГАЛ вертикальный",
     image: verticalGrillImg,
-    text: "Экологичная компактная конструкция",
+    text: "Экологически безопасное приготовление шашлыка",
     link: "/products/vertical-grill",
   },
   {
