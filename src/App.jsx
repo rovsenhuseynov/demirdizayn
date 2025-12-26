@@ -9,8 +9,9 @@ import Jurnal from "./pages/Jurnal/Jurnal";
 import Products from "./pages/Products/Products";
 import Services from "./pages/Services/Services";
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Product from "./pages/Products/Product/Product";
-
+import VerticalGrill from "./pages/Products/ListOfProducts/VerticalGrill";
+import SecondProduct from "./pages/Products/ListOfProducts/SecondProduct";
+import ThirdProduct from "./pages/Products/ListOfProducts/ThirdProduct";
 
 const App = () => {
   return (
@@ -21,7 +22,11 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:productSlug" element={<Product />} />
+
+          <Route path="/products/vertical-grill" element={<VerticalGrill />} />
+          <Route path="/products/second-product" element={<SecondProduct />} />
+          <Route path="/products/third-product" element={<ThirdProduct />} />
+
           <Route path="/faq" element={<Faq />} />
           <Route path="/jurnal" element={<Jurnal />} />
           <Route path="/contacts" element={<Contacts />} />

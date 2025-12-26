@@ -2,7 +2,6 @@ import verticalGrillImg from "../assets/images/product-images/ekoManqal/ekoManqa
 import secondProductImg from "../assets/images/product-images/НЕТ.png";
 import thirdProductImg from "../assets/images/product-images/НЕТ.png";
 
-// Массив данных для Products.jsx
 export const productsData = [
   {
     title: "Вертикальный мангал",
