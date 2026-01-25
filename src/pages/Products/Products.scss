@@ -45,15 +45,17 @@
   overflow: hidden;
   aspect-ratio: 4 / 3;
   width: 90%;
-  height: 85vh;
-  max-height: 85vh;
+  height: 80vh;
+  max-height: 80vh;
   margin-block: calc(4em + 2vw);
-
   display: block;
   border-radius: 7px;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+
+
+
 
   box-shadow:
     rgba(255, 255, 255, 0.3) 0 5vw 6vw -8vw,
