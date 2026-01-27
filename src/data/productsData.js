@@ -1,4 +1,4 @@
-import verticalGrillImg from "../assets/images/product-images/ekoManqal/ekoManqal_1.webp";
+import verticalGrillImg from "../assets/images/product-images/ekoManqal/largeSize/ekoManqal_largeSize_1.webp";
 import secondProductImg from "../assets/images/product-images/НЕТ.png";
 import thirdProductImg from "../assets/images/product-images/НЕТ.png";
 
